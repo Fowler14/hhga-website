@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>HHGA — Players</title>
+<link rel="stylesheet" href="style.css">
+<script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.1/dist/chart.umd.min.js"></script>
+</head>
+<body data-page="players">
+
+<header class="site">
+  <div class="wrap">
+    <h1><a href="index.html">HHGA</a></h1>
+    <span class="tagline">High Handicapper Golf Association &middot; est. 2000</span>
+    <nav class="site">
+      <a href="index.html">Home</a>
+      <a href="years.html">Years</a>
+      <a href="players.html" class="here">Players</a>
+    </nav>
+  </div>
+</header>
+
+<main>
+  <h2>Roster</h2>
+  <div class="roster" id="roster"></div>
+
+  <h2 id="p-name">…</h2>
+  <p class="muted" id="p-sub"></p>
+
+  <div class="statgrid">
+    <div class="card stat"><div class="big" id="p-wins">…</div><div class="small">Championships</div></div>
+    <div class="card stat"><div class="big" id="p-best">…</div><div class="small">Best finish</div></div>
+    <div class="card stat"><div class="big" id="p-avg">…</div><div class="small">Avg finish</div></div>
+    <div class="card stat"><div class="big" id="p-trips">…</div><div class="small">Trips</div></div>
+  </div>
+
+  <div class="profile-grid">
+    <div class="card"><canvas id="p-chart" height="240"></canvas></div>
+    <table class="data" id="p-seasons"></table>
+  </div>
+</main>
+
+<footer class="site">HHGA — the hackers, the legends, the Deadman.</footer>
+
+<script src="app.js"></script>
+</body>
+</html>

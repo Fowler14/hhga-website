@@ -1,0 +1,294 @@
+{
+  "_note": "Canonical player list. 'aliases' = every spelling that appears in the workbooks. Grows as each year is extracted. Ryan reviews each addition.",
+  "players": [
+    {
+      "id": "big-gay-al",
+      "name": "Big Gay Al",
+      "aliases": [
+        "Big Gay Al"
+      ],
+      "note": "One-time stand-in, 2005 only; real name unknown. NOT Roy Hoenisch (Ryan re-confirmed 2026-07-02)."
+    },
+    {
+      "id": "roy-hoenisch",
+      "name": "Roy Hoenisch",
+      "aliases": [
+        "Roy Hoenisch",
+        "Big Gay Roy",
+        "Roy",
+        "ROY",
+        "BGR"
+      ],
+      "note": "Joined 2006, replacing the 2005 stand-in 'Big Gay Al' — went by 'Big Gay Roy' as a joke about that. Different person from Big Gay Al AND from Loyd. Ryan confirmed 2026-07-04: 'BGR' in 2020-21 = Roy (back after 2011). (In 2013-2016 sheets, 'Roy'/'BGR' shorthand meant Loyd via per-year overrides.)"
+    },
+    {
+      "id": "billy",
+      "name": "Billy",
+      "aliases": [
+        "Billy",
+        "Bill",
+        "Brother Bill",
+        "Brother Billy"
+      ],
+      "note": "'Brother Billy'. First appears 2007 (1 round), full trips from 2009. Full name unknown, Ryan to identify."
+    },
+    {
+      "id": "brent-bartholomew",
+      "name": "Brent Bartholomew",
+      "aliases": [
+        "Brent Bartholomew",
+        "Brent"
+      ]
+    },
+    {
+      "id": "bruce-morris",
+      "name": "Bruce Morris",
+      "aliases": [
+        "Bruce Morris",
+        "Bruce"
+      ]
+    },
+    {
+      "id": "loyd",
+      "name": "Loyd",
+      "aliases": [
+        "Loyd",
+        "Big Gay Loyd"
+      ],
+      "note": "'Big Gay' is an evolving joke name (cf. Big Gay Al 2005, Big Gay Roy/Roy Hoenisch 2006+). Ryan CONFIRMED (twice, latest 2026-07-04): Loyd and Roy Hoenisch are different people — do not merge, do not re-ask. The 2013 Mist-Weed sheet calling him 'Roy' is a naming slip. Full name TBD."
+    },
+    {
+      "id": "cookie-ac-milan",
+      "name": "Cookie AC Milan",
+      "aliases": [
+        "Cookie AC Milan",
+        "Cookie",
+        "AC Milan"
+      ],
+      "note": "NEW in 2014. Real name unknown, Ryan to identify."
+    },
+    {
+      "id": "t-dog-hitman",
+      "name": "T-Dog Hitman",
+      "aliases": [
+        "T-Dog Hitman",
+        "T-Dog",
+        "Hitman"
+      ],
+      "note": "NEW in 2014. Real name unknown, Ryan to identify."
+    },
+    {
+      "id": "craig",
+      "name": "Craig",
+      "aliases": [
+        "Craig",
+        "Knees"
+      ],
+      "note": "NEW in 2007. Last name unknown, Ryan to identify. 'Knees' in the 2008 Myrtle Cup doc."
+    },
+    {
+      "id": "irv",
+      "name": "Irv",
+      "aliases": [
+        "Irv"
+      ],
+      "note": "NEW in 2007. Full name unknown, Ryan to identify."
+    },
+    {
+      "id": "deadman",
+      "name": "Deadman",
+      "aliases": [
+        "Deadman"
+      ],
+      "phantom": true,
+      "note": "NOT A REAL PLAYER. 2016 placeholder for the missing 12th man (11-player trip, Ryan confirmed 2026-07-04). Kept for Mist-Weed match records ('<carrier> (DM)' rows); excluded from the 2016 leaderboard. Site should exclude phantom players from rosters."
+    },
+    {
+      "id": "jeff",
+      "name": "Jeff",
+      "aliases": [
+        "Jeff",
+        "Jef"
+      ],
+      "note": "NEW in 2016. Last name unknown, Ryan to identify."
+    },
+    {
+      "id": "troy",
+      "name": "Troy",
+      "aliases": [
+        "Troy"
+      ],
+      "note": "NEW in 2016. Last name unknown, Ryan to identify."
+    },
+    {
+      "id": "dan-taber",
+      "name": "Dan Taber",
+      "aliases": [
+        "Dan Taber",
+        "Taber, D",
+        "Dano"
+      ]
+    },
+    {
+      "id": "dan-travisano",
+      "name": "Dan Travisano",
+      "aliases": [
+        "Dan Travisano",
+        "Travisano, D",
+        "Trav"
+      ]
+    },
+    {
+      "id": "don-fowler",
+      "name": "Don Fowler",
+      "aliases": [
+        "Don Fowler",
+        "Duck"
+      ]
+    },
+    {
+      "id": "greg-dueh",
+      "name": "Greg Dueh",
+      "aliases": [
+        "Greg Dueh",
+        "Dueh, G",
+        "Gregory",
+        "Greg"
+      ]
+    },
+    {
+      "id": "jim-fowler",
+      "name": "Jim Fowler",
+      "aliases": [
+        "Jim Fowler",
+        "Fowler, J",
+        "Jimmy",
+        "Jimmy F"
+      ]
+    },
+    {
+      "id": "jimmy-b",
+      "name": "Jimmy B",
+      "aliases": [
+        "Jimmy B"
+      ],
+      "note": "NEW in 2018 (Ocean City era). Last name unknown, Ryan to identify. Didn't play Mist-Weed 2018."
+    },
+    {
+      "id": "joe-dueh",
+      "name": "Joe Dueh",
+      "aliases": [
+        "Joe Dueh",
+        "Dueh, Jr.",
+        "Joey",
+        "Joe D",
+        "Joe"
+      ],
+      "note": "Ryan confirmed 2026-07-02: 'Dueh, Jr.' (2004) is the same person as Joe Dueh."
+    },
+    {
+      "id": "john-taber",
+      "name": "John Taber",
+      "aliases": [
+        "John Taber",
+        "Johnny T",
+        "John T",
+        "Johnny"
+      ]
+    },
+    {
+      "id": "john-williams",
+      "name": "John Williams",
+      "aliases": [
+        "John Williams",
+        "Williams, J",
+        "Pappy Williams",
+        "Pappy",
+        "JW"
+      ]
+    },
+    {
+      "id": "jose-perna",
+      "name": "Jose Perna",
+      "aliases": [
+        "Jose Perna"
+      ]
+    },
+    {
+      "id": "phil-fowler",
+      "name": "Phil Fowler",
+      "aliases": [
+        "Phil Fowler",
+        "Fowler,P",
+        "Fowler, P",
+        "Phil",
+        "Fill"
+      ]
+    },
+    {
+      "id": "dan-shelbo-sr",
+      "name": "Dan Shelbo Sr.",
+      "aliases": [
+        "Dan Shelbo Sr.",
+        "Dan Shelbo",
+        "Shelbo"
+      ],
+      "note": "'Shelbo'. A 'Shelbo Jr.' appears in later years (his son) — keep distinct."
+    },
+    {
+      "id": "dan-shelbo-jr",
+      "name": "Dan Shelbo Jr.",
+      "aliases": [
+        "Dan Shelbo Jr.",
+        "Shelbo Jr.",
+        "Shelbo JR",
+        "Shelbo Junior",
+        "Junior"
+      ],
+      "note": "Shelbo's son, first appears 2020 ('Junior')."
+    },
+    {
+      "id": "matt",
+      "name": "Matt",
+      "aliases": [
+        "Matt"
+      ],
+      "note": "NEW in 2020. Last name unknown, Ryan to identify. 2021 champion."
+    },
+    {
+      "id": "kevin",
+      "name": "Kevin Burke",
+      "aliases": [
+        "Kevin Burke",
+        "Kevin"
+      ],
+      "note": "First appears 2021. Full name from the 2024 Year in Review ('Monkey's Ass: Kevin Burke')."
+    },
+    {
+      "id": "tom-conroy",
+      "name": "Tom Conroy",
+      "aliases": [
+        "Tom Conroy",
+        "Conroy, T",
+        "TC"
+      ]
+    },
+    {
+      "id": "ryan-fowler",
+      "name": "Ryan Fowler",
+      "aliases": [
+        "Ryan Fowler",
+        "Ryan"
+      ],
+      "note": "First appears 2024. The keeper of this website (rgfowler97)."
+    },
+    {
+      "id": "scotty-h",
+      "name": "Scotty H",
+      "aliases": [
+        "Scotty H"
+      ],
+      "note": "Listed on the 2025 roster but no scores recorded (LeaderBoard row 0). Identity/attendance pending Ryan."
+    }
+  ]
+}

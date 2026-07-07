@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>HHGA — High Handicapper Golf Association</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body data-page="home">
+
+<header class="site">
+  <div class="wrap">
+    <h1><a href="index.html">HHGA</a></h1>
+    <span class="tagline">High Handicapper Golf Association &middot; est. 2000</span>
+    <nav class="site">
+      <a href="index.html" class="here">Home</a>
+      <a href="years.html">Years</a>
+      <a href="players.html">Players</a>
+    </nav>
+  </div>
+</header>
+
+<main>
+  <div class="hero">
+    <div class="card champ">
+      <div class="label">Reigning Champion</div>
+      <div class="name" id="champ-name">…</div>
+      <div class="detail" id="champ-detail"></div>
+      <div class="detail" id="champ-titles"></div>
+    </div>
+    <div class="card">
+      <h3 style="margin-top:0">Next trip: 2026</h3>
+      <p>Details TBD — location and dates to be announced at the next
+         HHGA meeting.</p>
+      <p class="muted">Mist vs Weed all-time:</p>
+      <div class="mw-final" id="mw-tally"></div>
+    </div>
+  </div>
+
+  <h2>26 Years of Questionable Golf</h2>
+  <div class="statgrid">
+    <div class="card stat"><div class="big" id="stat-years">…</div><div class="small">Trips</div></div>
+    <div class="card stat"><div class="big" id="stat-strokes">…</div><div class="small">Total strokes</div></div>
+    <div class="card stat"><div class="big" id="stat-holes">…</div><div class="small">Holes played</div></div>
+    <div class="card stat"><div class="big" id="stat-players">…</div><div class="small">Players all-time</div></div>
+  </div>
+
+  <h2>Champions Wall</h2>
+  <div class="wall" id="wall"></div>
+</main>
+
+<footer class="site">
+  HHGA — Hilton Head &rarr; Myrtle Beach &rarr; Ocean City &rarr; Atlantic City.
+  Data lovingly extracted from 26 years of Excel scoresheets.
+</footer>
+
+<script src="app.js"></script>
+</body>
+</html>

@@ -1,0 +1,6 @@
+# Source archive — personal docs, minutes, receipts. NEVER publish.
+HH/
+
+# local tooling
+.claude/
+.DS_Store
