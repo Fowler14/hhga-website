@@ -1,6 +1,6 @@
 # HHGA Website
 
-Static site for the High Handicapper Golf Association's annual golf trip
+Static site for the Hilton Head Golf Association's annual golf trip
 (2000–present). Vanilla HTML/CSS/JS, no build step — the pages fetch
 `data/hhga.json` and render everything client-side.
 
