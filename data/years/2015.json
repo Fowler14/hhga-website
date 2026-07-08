@@ -257,7 +257,7 @@
           7,
           6
         ],
-        "loyd": [
+        "roy-hoenisch": [
           5,
           5,
           7,
@@ -290,7 +290,7 @@
         "craig": 32,
         "greg-dueh": 21,
         "t-dog-hitman": 37,
-        "loyd": 19
+        "roy-hoenisch": 19
       },
       "rating": 70.5
     },
@@ -540,7 +540,7 @@
           4,
           12
         ],
-        "loyd": [
+        "roy-hoenisch": [
           4,
           6,
           4,
@@ -573,7 +573,7 @@
         "craig": 33,
         "greg-dueh": 21,
         "t-dog-hitman": 42,
-        "loyd": 20
+        "roy-hoenisch": 20
       },
       "rating": 69.1,
       "slope": 123
@@ -824,7 +824,7 @@
           5,
           4
         ],
-        "loyd": [
+        "roy-hoenisch": [
           5,
           5,
           6,
@@ -857,7 +857,7 @@
         "craig": 33,
         "greg-dueh": 21,
         "t-dog-hitman": 40,
-        "loyd": 18
+        "roy-hoenisch": 18
       },
       "rating": 69.0,
       "slope": 126
@@ -1108,7 +1108,7 @@
           4,
           6
         ],
-        "loyd": [
+        "roy-hoenisch": [
           7,
           7,
           7,
@@ -1141,7 +1141,7 @@
         "craig": 33,
         "greg-dueh": 21,
         "t-dog-hitman": 34,
-        "loyd": 17
+        "roy-hoenisch": 17
       },
       "rating": 68.4,
       "slope": 123
@@ -1392,7 +1392,7 @@
           6,
           7
         ],
-        "loyd": [
+        "roy-hoenisch": [
           6,
           5,
           5,
@@ -1425,7 +1425,7 @@
         "craig": 33,
         "greg-dueh": 21,
         "t-dog-hitman": 31,
-        "loyd": 17
+        "roy-hoenisch": 17
       },
       "rating": 68.7,
       "slope": 124
@@ -1475,7 +1475,7 @@
       "place": 7
     },
     {
-      "player": "loyd",
+      "player": "roy-hoenisch",
       "gross": 461,
       "net": 370.0,
       "place": 8
@@ -1552,7 +1552,7 @@
       "pars": 7,
       "birdies": 1
     },
-    "loyd": {
+    "roy-hoenisch": {
       "pars": 17,
       "birdies": 3
     }
@@ -1564,7 +1564,7 @@
           "brent-bartholomew",
           "dan-shelbo-sr",
           "joe-dueh",
-          "loyd",
+          "roy-hoenisch",
           "t-dog-hitman",
           "tom-conroy"
         ],
@@ -1582,7 +1582,7 @@
           "day": 1,
           "matches": [
             {
-              "mist": "loyd",
+              "mist": "roy-hoenisch",
               "weed": "dan-travisano",
               "mistPts": 0.0,
               "weedPts": 1.0
@@ -1625,7 +1625,7 @@
           "day": 2,
           "matches": [
             {
-              "mist": "loyd",
+              "mist": "roy-hoenisch",
               "weed": "dan-travisano",
               "mistPts": 1.0,
               "weedPts": 0.0
@@ -1668,7 +1668,7 @@
           "day": 3,
           "matches": [
             {
-              "mist": "loyd",
+              "mist": "roy-hoenisch",
               "weed": "phil-fowler",
               "mistPts": 1.0,
               "weedPts": 0.0
@@ -1711,7 +1711,7 @@
           "day": 4,
           "matches": [
             {
-              "mist": "loyd",
+              "mist": "roy-hoenisch",
               "weed": "dan-travisano",
               "mistPts": 0.0,
               "weedPts": 1.0
@@ -1754,7 +1754,7 @@
           "day": 5,
           "matches": [
             {
-              "mist": "loyd",
+              "mist": "roy-hoenisch",
               "weed": "phil-fowler",
               "mistPts": 1.0,
               "weedPts": 0.0
@@ -1835,7 +1835,7 @@
           "losses": 1,
           "ties": 0
         },
-        "loyd": {
+        "roy-hoenisch": {
           "wins": 2,
           "losses": 2,
           "ties": 0
@@ -1861,7 +1861,7 @@
           "ties": 0
         }
       },
-      "note": "Individual W-L-T table (and HHScoresHistory's copy of it) only covers days 1-4; the match grid has all 5 days. Team result includes day 5. Sheet shorthand 'BGR'/'Roy' = Loyd."
+      "note": "Individual W-L-T table (and HHScoresHistory's copy of it) only covers days 1-4; the match grid has all 5 days. Team result includes day 5. Sheet shorthand 'BGR'/'Roy' = Roy Hoenisch."
     },
     "lostBall": {
       "tom-conroy": 108,
@@ -1874,7 +1874,7 @@
       "dan-travisano": 155,
       "joe-dueh": 182,
       "craig": 183,
-      "loyd": 183,
+      "roy-hoenisch": 183,
       "dan-taber": 197
     },
     "lostBallNote": "First year of the LostBall sheet. Numbers stored verbatim \u2014 unit unclear (history says 125 balls lost in 2015; sheet totals 1828). Ryan to explain."

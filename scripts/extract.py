@@ -1439,7 +1439,7 @@ def parse_leaderboard_xlsm(wb, alias_lookup, round_nets, rounds, year):
 
 def extract_2012(alias_lookup):
     """2012: 'HH Score 2012 Working.xlsm' — first .xlsm year. Fall trip
-    Oct 15-19, 12 players. New: Brent, Shelbo, 'Big Gay Loyd' (identity
+    Oct 15-19, 12 players. New: Brent, Shelbo; 'Big Gay Loyd' = Roy Hoenisch (identity
     TBD — possibly Roy under a new joke name). Roy/Bruce/Billy/Johnny T
     absent.
 
@@ -1553,9 +1553,8 @@ def extract_2013(alias_lookup):
     12 players (Joey absent, Bruce back). LeaderBoard: Jimmy and Brent
     BOTH 361; sheet places Jimmy 1st.
     Mist-Weed complete (Mist 16-14, matches Team_Hist). The Mist-Weed
-    sheet calls Big Gay Loyd 'Roy' — same 12 people as Scores with
-    Roy<->Loyd the only name difference, so 'Roy' is mapped to Loyd for
-    this year (flagged: suggests Loyd may be Roy Hoenisch).
+    sheet calls Big Gay Loyd 'Roy' — Ryan confirmed 2026-07-08 that
+    'Big Gay Loyd' WAS Roy Hoenisch all along (there is no Loyd).
     """
     import openpyxl
     wb = openpyxl.load_workbook(
@@ -1563,11 +1562,10 @@ def extract_2013(alias_lookup):
     rounds, round_nets, stats = parse_score_sheet_xlsm(wb, "Scores", 2013, alias_lookup)
     leaderboard = parse_leaderboard_xlsm(wb, alias_lookup, round_nets, rounds, 2013)
     mist_weed = parse_mist_weed_xlsm(wb, alias_lookup, 2013,
-                                     overrides={"roy": "loyd"})
-    mist_weed["note"] = ("The workbook's Mist-Weed sheet calls Loyd 'Roy' "
-                         "(mapped to Loyd here; sheet naming slip — Ryan "
-                         "confirmed 2026-07-04 Loyd and Roy Hoenisch are "
-                         "different people). Also: the per-match grid gives "
+                                     overrides={"roy": "roy-hoenisch"})
+    mist_weed["note"] = ("'Roy' / 'Big Gay Loyd' = Roy Hoenisch (Ryan "
+                         "confirmed 2026-07-08: there is no Loyd). "
+                         "Also: the per-match grid gives "
                          "Brent 4-1/Phil 1-3-1 but the official W-L-T table "
                          "(and HHScoresHistory) says Brent 3-2/Phil 2-2-1 — a "
                          "pairing row was misrecorded; the table is authoritative, "
@@ -1590,7 +1588,7 @@ def extract_2013(alias_lookup):
 
 
 MW_OVERRIDES_2014 = {
-    "roy": "loyd",  # sheet naming slip; Loyd and Roy Hoenisch are different people
+    "roy": "roy-hoenisch",
     "hitman": "t-dog-hitman", "t-dog": "t-dog-hitman",
     "cookie": "cookie-ac-milan", "ac milan": "cookie-ac-milan",
 }
@@ -1602,7 +1600,7 @@ def extract_2014(alias_lookup):
     Duck/Knees/Bruce out. Shelbo wins two years after finishing last.
     Mist-Weed: Weed's first-ever win, 18-6 (Mist swept 0-6 on day 1;
     day 5 not played/recorded — history's 24-pt total agrees). The
-    sheet again calls Loyd 'Roy' (mapped)."""
+    sheet again calls him 'Roy' (= Roy Hoenisch)."""
     import openpyxl
     wb = openpyxl.load_workbook(
         HH / "2014" / "HH Score 2014 Working.xlsm", read_only=True, data_only=True)
@@ -1650,13 +1648,13 @@ def extract_2015(alias_lookup):
     2014, champion 2015. First LostBall sheet (numbers captured verbatim;
     interpretation unclear — history's Shots sheet says 125 lost balls
     for 2015 but the sheet totals 1828 — Ryan to explain).
-    Mist-Weed: Mist 20.5-9.5 (matches Team_Hist). Sheet calls Loyd 'BGR'
+    Mist-Weed: Mist 20.5-9.5 (matches Team_Hist). Sheet calls Roy 'BGR'
     / 'Roy'. The individual W-L-T table only covers days 1-4 (24
     matches); HHScoresHistory copied the same 4-day table."""
     import openpyxl
     wb = openpyxl.load_workbook(
         HH / "2015" / "HH Score 2015 Working.xlsm", read_only=True, data_only=True)
-    overrides = {"roy": "loyd", "bgr": "loyd",
+    overrides = {"roy": "roy-hoenisch", "bgr": "roy-hoenisch",
                  "t-dog": "t-dog-hitman", "hitman": "t-dog-hitman"}
     rounds, round_nets, stats = parse_score_sheet_xlsm(wb, "Scores", 2015, alias_lookup)
     leaderboard = parse_leaderboard_xlsm(wb, alias_lookup, round_nets, rounds, 2015)
@@ -1664,7 +1662,7 @@ def extract_2015(alias_lookup):
     mist_weed["note"] = ("Individual W-L-T table (and HHScoresHistory's copy of "
                          "it) only covers days 1-4; the match grid has all 5 "
                          "days. Team result includes day 5. Sheet shorthand "
-                         "'BGR'/'Roy' = Loyd.")
+                         "'BGR'/'Roy' = Roy Hoenisch.")
     lost_ball = parse_lostball_xlsm(wb, alias_lookup, overrides=overrides)
 
     return {
@@ -1701,7 +1699,7 @@ def extract_2016(alias_lookup):
     import openpyxl
     wb = openpyxl.load_workbook(
         HH / "2016" / "HH Score 2016 working.xlsm", read_only=True, data_only=True)
-    overrides = {"roy": "loyd", "bgr": "loyd", "jef": "jeff",
+    overrides = {"roy": "roy-hoenisch", "bgr": "roy-hoenisch", "jef": "jeff",
                  "t-dog": "t-dog-hitman", "hitman": "t-dog-hitman"}
     rounds, round_nets, stats = parse_score_sheet_xlsm(wb, "Scores", 2016, alias_lookup)
 
@@ -1734,7 +1732,7 @@ def extract_2016(alias_lookup):
                          "a rotating Mist player carried the Deadman ball each "
                          "day; all such rows are credited to 'deadman'. "
                          "HHScoresHistory instead folded some DM results into "
-                         "the carriers' records (TC 5-1, Loyd 3-3, Shelbo 1-5 "
+                         "the carriers' records (TC 5-1, Roy 3-3, Shelbo 1-5 "
                          "there) and has no Deadman row — workbook table kept "
                          "here; team result identical either way.")
     lost_ball = parse_lostball_xlsm(wb, alias_lookup, overrides=overrides)
@@ -1762,7 +1760,7 @@ def extract_2017(alias_lookup):
     Working == Working_Fri). Sep 18-22: Arrowhead, Tidewater, Barefoot
     Fazio, Thistle, Prestwick. 11 real players + the Deadman placeholder
     again (all-zero scores, sheet place 1 at 'net 0' — dropped; real
-    champion Trav 367 on the tiebreak over Loyd 367).
+    champion Trav 367 on the tiebreak over Roy 367).
     Mist-Weed: only days 1-4 played (day 5 all zeros — dropped);
     final Weed 12.5-11.5 (matches Team_Hist 24-pt year). This year the
     '(DM)' rows count for the CARRIER (individual table: Deadman 0-0-0,
@@ -1771,7 +1769,7 @@ def extract_2017(alias_lookup):
     import openpyxl
     wb = openpyxl.load_workbook(
         HH / "2017" / "HH Score 2017 Working.xlsm", read_only=True, data_only=True)
-    overrides = {"roy": "loyd", "bgr": "loyd", "jef": "jeff",
+    overrides = {"roy": "roy-hoenisch", "bgr": "roy-hoenisch", "jef": "jeff",
                  "t-dog": "t-dog-hitman", "hitman": "t-dog-hitman",
                  "t-dog(d2)troy": "troy"}
     rounds, round_nets, stats = parse_score_sheet_xlsm(wb, "Scores", 2017, alias_lookup)
@@ -1823,7 +1821,7 @@ def extract_2017(alias_lookup):
         "leaderboard": leaderboard,
         "champion": leaderboard[0]["player"],
         "championNote": ("Verified by Ryan 2026-07-04: champion = Dan Travisano "
-                         "(367, tiebreak over Loyd 367). 2nd title."),
+                         "(367, tiebreak over Roy Hoenisch 367). 2nd title."),
         "stats": stats,
         "sideGames": {"mistWeed": mist_weed, "lostBall": lost_ball},
     }
@@ -1840,7 +1838,7 @@ def extract_2018(alias_lookup):
     import openpyxl
     wb = openpyxl.load_workbook(
         HH / "2018" / "HH Score 2018 Working.xlsm", read_only=True, data_only=True)
-    overrides = {"roy": "loyd", "bgr": "loyd", "jef": "jeff",
+    overrides = {"roy": "roy-hoenisch", "bgr": "roy-hoenisch", "jef": "jeff",
                  "t-dog": "t-dog-hitman", "hitman": "t-dog-hitman",
                  "deadman (tc)": "tom-conroy", "jimmt f": "jim-fowler"}
     rounds, round_nets, stats = parse_score_sheet_xlsm(wb, "Scores", 2018, alias_lookup)
@@ -1881,7 +1879,7 @@ def extract_2019(alias_lookup):
     import openpyxl
     wb = openpyxl.load_workbook(
         HH / "2019" / "HH Score 2019 Working.xlsm", read_only=True, data_only=True)
-    overrides = {"roy": "loyd", "bgr": "loyd",
+    overrides = {"roy": "roy-hoenisch", "bgr": "roy-hoenisch",
                  "t-dog": "t-dog-hitman", "hitman": "t-dog-hitman"}
     rounds, round_nets, stats = parse_score_sheet_xlsm(wb, "Scores", 2019, alias_lookup)
 
@@ -1950,7 +1948,7 @@ def _extract_oc_era(year, path, real_dates, date_note, alias_lookup,
     verbatim."""
     import openpyxl
     wb = openpyxl.load_workbook(path, read_only=True, data_only=True)
-    overrides = {"roy": "loyd", "bgr": "loyd",
+    overrides = {"roy": "roy-hoenisch", "bgr": "roy-hoenisch",
                  "t-dog": "t-dog-hitman", "hitman": "t-dog-hitman"}
     overrides.update(extra_overrides or {})
     rounds, round_nets, stats = parse_score_sheet_xlsm(wb, "Scores", year, alias_lookup)

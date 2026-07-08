@@ -257,7 +257,7 @@
           3,
           4
         ],
-        "loyd": [
+        "roy-hoenisch": [
           7,
           6,
           7,
@@ -290,7 +290,7 @@
         "troy": 17,
         "greg-dueh": 25,
         "brent-bartholomew": 9,
-        "loyd": 20
+        "roy-hoenisch": 20
       },
       "rating": 67.2
     },
@@ -540,7 +540,7 @@
           4,
           5
         ],
-        "loyd": [
+        "roy-hoenisch": [
           3,
           6,
           6,
@@ -573,7 +573,7 @@
         "troy": 16,
         "greg-dueh": 24,
         "brent-bartholomew": 9,
-        "loyd": 20
+        "roy-hoenisch": 20
       },
       "rating": 68.1
     },
@@ -823,7 +823,7 @@
           3,
           4
         ],
-        "loyd": [
+        "roy-hoenisch": [
           5,
           4,
           5,
@@ -856,7 +856,7 @@
         "troy": 16,
         "greg-dueh": 22,
         "brent-bartholomew": 8,
-        "loyd": 18
+        "roy-hoenisch": 18
       },
       "rating": 67.5,
       "slope": 113
@@ -1107,7 +1107,7 @@
           6,
           5
         ],
-        "loyd": [
+        "roy-hoenisch": [
           6,
           4,
           5,
@@ -1140,7 +1140,7 @@
         "troy": 16,
         "greg-dueh": 22,
         "brent-bartholomew": 8,
-        "loyd": 18
+        "roy-hoenisch": 18
       },
       "rating": 67.9,
       "slope": 124
@@ -1391,7 +1391,7 @@
           5,
           5
         ],
-        "loyd": [
+        "roy-hoenisch": [
           5,
           7,
           5,
@@ -1424,7 +1424,7 @@
         "troy": 16,
         "greg-dueh": 21,
         "brent-bartholomew": 8,
-        "loyd": 17
+        "roy-hoenisch": 17
       },
       "rating": 69.0,
       "slope": 125
@@ -1480,7 +1480,7 @@
       "place": 8
     },
     {
-      "player": "loyd",
+      "player": "roy-hoenisch",
       "gross": 477,
       "net": 384.0,
       "place": 9
@@ -1551,7 +1551,7 @@
       "pars": 40,
       "birdies": 3
     },
-    "loyd": {
+    "roy-hoenisch": {
       "pars": 22,
       "birdies": 2
     }
@@ -1561,8 +1561,8 @@
       "teams": {
         "mist": [
           "brent-bartholomew",
-          "loyd",
           "phil-fowler",
+          "roy-hoenisch",
           "tom-conroy",
           "troy"
         ],
@@ -1580,7 +1580,7 @@
           "day": 1,
           "matches": [
             {
-              "mist": "loyd",
+              "mist": "roy-hoenisch",
               "weed": "greg-dueh",
               "mistPts": 0.0,
               "weedPts": 1.0
@@ -1629,13 +1629,13 @@
               "weedPts": 1.0
             },
             {
-              "mist": "loyd",
+              "mist": "roy-hoenisch",
               "weed": "greg-dueh",
               "mistPts": 0.0,
               "weedPts": 1.0
             },
             {
-              "mist": "loyd",
+              "mist": "roy-hoenisch",
               "weed": "dan-taber",
               "mistPts": 1.0,
               "weedPts": 0.0
@@ -1684,7 +1684,7 @@
               "weedPts": 0.0
             },
             {
-              "mist": "loyd",
+              "mist": "roy-hoenisch",
               "weed": "jim-fowler",
               "mistPts": 1.0,
               "weedPts": 0.0
@@ -1739,7 +1739,7 @@
               "weedPts": 1.0
             },
             {
-              "mist": "loyd",
+              "mist": "roy-hoenisch",
               "weed": "don-fowler",
               "mistPts": 1.0,
               "weedPts": 0.0
@@ -1785,7 +1785,7 @@
           "losses": 0,
           "ties": 0
         },
-        "loyd": {
+        "roy-hoenisch": {
           "wins": 3,
           "losses": 2,
           "ties": 0
@@ -1820,7 +1820,7 @@
       "troy": 126,
       "dan-travisano": 132,
       "jimmy-b": 135,
-      "loyd": 141,
+      "roy-hoenisch": 141,
       "jeff": 154,
       "dan-taber": 158,
       "tom-conroy": 164,

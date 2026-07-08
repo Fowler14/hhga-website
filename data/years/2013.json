@@ -257,7 +257,7 @@
           7,
           6
         ],
-        "loyd": [
+        "roy-hoenisch": [
           5,
           7,
           4,
@@ -290,7 +290,7 @@
         "craig": 29,
         "greg-dueh": 17,
         "don-fowler": 26,
-        "loyd": 16
+        "roy-hoenisch": 16
       },
       "rating": 69.6,
       "slope": 131
@@ -541,7 +541,7 @@
           3,
           6
         ],
-        "loyd": [
+        "roy-hoenisch": [
           5,
           4,
           5,
@@ -574,7 +574,7 @@
         "craig": 32,
         "greg-dueh": 19,
         "don-fowler": 26,
-        "loyd": 17
+        "roy-hoenisch": 17
       },
       "rating": 67.6,
       "slope": 120
@@ -825,7 +825,7 @@
           6,
           7
         ],
-        "loyd": [
+        "roy-hoenisch": [
           4,
           6,
           5,
@@ -858,7 +858,7 @@
         "craig": 32,
         "greg-dueh": 18,
         "don-fowler": 26,
-        "loyd": 17
+        "roy-hoenisch": 17
       },
       "rating": 69.1,
       "slope": 125
@@ -1109,7 +1109,7 @@
           6,
           8
         ],
-        "loyd": [
+        "roy-hoenisch": [
           6,
           7,
           5,
@@ -1142,7 +1142,7 @@
         "craig": 33,
         "greg-dueh": 18,
         "don-fowler": 27,
-        "loyd": 20
+        "roy-hoenisch": 20
       },
       "rating": 71.1,
       "slope": 147
@@ -1393,7 +1393,7 @@
           4,
           6
         ],
-        "loyd": [
+        "roy-hoenisch": [
           5,
           4,
           4,
@@ -1426,7 +1426,7 @@
         "craig": 33,
         "greg-dueh": 18,
         "don-fowler": 29,
-        "loyd": 18
+        "roy-hoenisch": 18
       },
       "rating": 70.3,
       "slope": 125
@@ -1470,7 +1470,7 @@
       "place": 6
     },
     {
-      "player": "loyd",
+      "player": "roy-hoenisch",
       "gross": 471,
       "net": 383.0,
       "place": 7
@@ -1553,7 +1553,7 @@
       "pars": 8,
       "birdies": 0
     },
-    "loyd": {
+    "roy-hoenisch": {
       "pars": 26,
       "birdies": 1
     }
@@ -1565,8 +1565,8 @@
           "brent-bartholomew",
           "dan-shelbo-sr",
           "don-fowler",
-          "loyd",
           "phil-fowler",
+          "roy-hoenisch",
           "tom-conroy"
         ],
         "weed": [
@@ -1595,7 +1595,7 @@
               "weedPts": 1.0
             },
             {
-              "mist": "loyd",
+              "mist": "roy-hoenisch",
               "weed": "craig",
               "mistPts": 0.0,
               "weedPts": 1.0
@@ -1626,7 +1626,7 @@
           "day": 2,
           "matches": [
             {
-              "mist": "loyd",
+              "mist": "roy-hoenisch",
               "weed": "jim-fowler",
               "mistPts": 1.0,
               "weedPts": 0.0
@@ -1681,7 +1681,7 @@
               "weedPts": 0.0
             },
             {
-              "mist": "loyd",
+              "mist": "roy-hoenisch",
               "weed": "dan-taber",
               "mistPts": 1.0,
               "weedPts": 0.0
@@ -1724,7 +1724,7 @@
               "weedPts": 0.0
             },
             {
-              "mist": "loyd",
+              "mist": "roy-hoenisch",
               "weed": "bruce-morris",
               "mistPts": 1.0,
               "weedPts": 0.0
@@ -1767,7 +1767,7 @@
               "weedPts": 0.0
             },
             {
-              "mist": "loyd",
+              "mist": "roy-hoenisch",
               "weed": "dan-travisano",
               "mistPts": 0.0,
               "weedPts": 1.0
@@ -1836,7 +1836,7 @@
           "losses": 2,
           "ties": 0
         },
-        "loyd": {
+        "roy-hoenisch": {
           "wins": 3,
           "losses": 2,
           "ties": 0
@@ -1862,7 +1862,7 @@
           "ties": 0
         }
       },
-      "note": "The workbook's Mist-Weed sheet calls Loyd 'Roy' (mapped to Loyd here; sheet naming slip \u2014 Ryan confirmed 2026-07-04 Loyd and Roy Hoenisch are different people). Also: the per-match grid gives Brent 4-1/Phil 1-3-1 but the official W-L-T table (and HHScoresHistory) says Brent 3-2/Phil 2-2-1 \u2014 a pairing row was misrecorded; the table is authoritative, team points unaffected."
+      "note": "'Roy' / 'Big Gay Loyd' = Roy Hoenisch (Ryan confirmed 2026-07-08: there is no Loyd). Also: the per-match grid gives Brent 4-1/Phil 1-3-1 but the official W-L-T table (and HHScoresHistory) says Brent 3-2/Phil 2-2-1 \u2014 a pairing row was misrecorded; the table is authoritative, team points unaffected."
     }
   }
 }

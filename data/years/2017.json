@@ -237,7 +237,7 @@
           7,
           8
         ],
-        "loyd": [
+        "roy-hoenisch": [
           5,
           5,
           8,
@@ -269,7 +269,7 @@
         "troy": 11,
         "greg-dueh": 23,
         "t-dog-hitman": 34,
-        "loyd": 21
+        "roy-hoenisch": 21
       }
     },
     {
@@ -498,7 +498,7 @@
           6,
           8
         ],
-        "loyd": [
+        "roy-hoenisch": [
           5,
           8,
           5,
@@ -530,7 +530,7 @@
         "troy": 13,
         "greg-dueh": 23,
         "t-dog-hitman": 34,
-        "loyd": 22
+        "roy-hoenisch": 22
       },
       "rating": 63.3
     },
@@ -760,7 +760,7 @@
           8,
           8
         ],
-        "loyd": [
+        "roy-hoenisch": [
           3,
           7,
           5,
@@ -792,7 +792,7 @@
         "troy": 13,
         "greg-dueh": 23,
         "t-dog-hitman": 34,
-        "loyd": 22
+        "roy-hoenisch": 22
       },
       "rating": 67.8
     },
@@ -1022,7 +1022,7 @@
           8,
           10
         ],
-        "loyd": [
+        "roy-hoenisch": [
           7,
           4,
           4,
@@ -1054,7 +1054,7 @@
         "troy": 13,
         "greg-dueh": 23,
         "t-dog-hitman": 34,
-        "loyd": 22
+        "roy-hoenisch": 22
       },
       "rating": 69.2
     },
@@ -1264,7 +1264,7 @@
           6,
           6
         ],
-        "loyd": [
+        "roy-hoenisch": [
           7,
           8,
           8,
@@ -1295,7 +1295,7 @@
         "dan-shelbo-sr": 26,
         "troy": 15,
         "greg-dueh": 24,
-        "loyd": 20
+        "roy-hoenisch": 20
       },
       "rating": 69.3
     }
@@ -1308,7 +1308,7 @@
       "place": 1
     },
     {
-      "player": "loyd",
+      "player": "roy-hoenisch",
       "gross": 474,
       "net": 367.0,
       "place": 2
@@ -1369,7 +1369,7 @@
     }
   ],
   "champion": "dan-travisano",
-  "championNote": "Verified by Ryan 2026-07-04: champion = Dan Travisano (367, tiebreak over Loyd 367). 2nd title.",
+  "championNote": "Verified by Ryan 2026-07-04: champion = Dan Travisano (367, tiebreak over Roy Hoenisch 367). 2nd title.",
   "stats": {
     "tom-conroy": {
       "pars": 13,
@@ -1411,7 +1411,7 @@
       "pars": 1,
       "birdies": 0
     },
-    "loyd": {
+    "roy-hoenisch": {
       "pars": 22,
       "birdies": 2
     }
@@ -1421,7 +1421,7 @@
       "teams": {
         "mist": [
           "dan-shelbo-sr",
-          "loyd",
+          "roy-hoenisch",
           "t-dog-hitman",
           "tom-conroy",
           "troy"
@@ -1470,7 +1470,7 @@
               "weedPts": 1.0
             },
             {
-              "mist": "loyd",
+              "mist": "roy-hoenisch",
               "weed": "jeff",
               "mistPts": 1.0,
               "weedPts": 0.0
@@ -1501,7 +1501,7 @@
               "weedPts": 1.0
             },
             {
-              "mist": "loyd",
+              "mist": "roy-hoenisch",
               "weed": "dan-travisano",
               "mistPts": 0.0,
               "weedPts": 1.0
@@ -1526,7 +1526,7 @@
           "day": 3,
           "matches": [
             {
-              "mist": "loyd",
+              "mist": "roy-hoenisch",
               "weed": "dan-taber",
               "mistPts": 1.0,
               "weedPts": 0.0
@@ -1556,7 +1556,7 @@
               "weedPts": 0.0
             },
             {
-              "mist": "loyd",
+              "mist": "roy-hoenisch",
               "weed": "greg-dueh",
               "mistPts": 1.0,
               "weedPts": 0.0
@@ -1569,7 +1569,7 @@
           "day": 4,
           "matches": [
             {
-              "mist": "loyd",
+              "mist": "roy-hoenisch",
               "weed": "dan-travisano",
               "mistPts": 1.0,
               "weedPts": 0.0
@@ -1593,7 +1593,7 @@
               "weedPts": 0.0
             },
             {
-              "mist": "loyd",
+              "mist": "roy-hoenisch",
               "weed": "jeff",
               "mistPts": 1.0,
               "weedPts": 0.0
@@ -1645,7 +1645,7 @@
           "losses": 2,
           "ties": 0
         },
-        "loyd": {
+        "roy-hoenisch": {
           "wins": 5,
           "losses": 1,
           "ties": 0
@@ -1678,7 +1678,7 @@
       "greg-dueh": 99,
       "jeff": 105,
       "troy": 107,
-      "loyd": 110,
+      "roy-hoenisch": 110,
       "tom-conroy": 115,
       "dan-shelbo-sr": 120,
       "phil-fowler": 121,

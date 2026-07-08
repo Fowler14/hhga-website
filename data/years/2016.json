@@ -237,7 +237,7 @@
           6,
           9
         ],
-        "loyd": [
+        "roy-hoenisch": [
           7,
           4,
           4,
@@ -269,7 +269,7 @@
         "troy": 8,
         "greg-dueh": 21,
         "t-dog-hitman": 31,
-        "loyd": 17
+        "roy-hoenisch": 17
       }
     },
     {
@@ -498,7 +498,7 @@
           7,
           8
         ],
-        "loyd": [
+        "roy-hoenisch": [
           4,
           4,
           6,
@@ -530,7 +530,7 @@
         "troy": 8,
         "greg-dueh": 22,
         "t-dog-hitman": 31,
-        "loyd": 18
+        "roy-hoenisch": 18
       },
       "rating": 70.8
     },
@@ -760,7 +760,7 @@
           6,
           7
         ],
-        "loyd": [
+        "roy-hoenisch": [
           7,
           8,
           7,
@@ -792,7 +792,7 @@
         "troy": 8,
         "greg-dueh": 24,
         "t-dog-hitman": 30,
-        "loyd": 16
+        "roy-hoenisch": 16
       },
       "rating": 69.1
     },
@@ -1022,7 +1022,7 @@
           7,
           5
         ],
-        "loyd": [
+        "roy-hoenisch": [
           5,
           8,
           7,
@@ -1054,7 +1054,7 @@
         "troy": 8,
         "greg-dueh": 24,
         "t-dog-hitman": 29,
-        "loyd": 18
+        "roy-hoenisch": 18
       },
       "rating": 68.4
     },
@@ -1284,7 +1284,7 @@
           5,
           7
         ],
-        "loyd": [
+        "roy-hoenisch": [
           4,
           4,
           7,
@@ -1316,7 +1316,7 @@
         "troy": 9,
         "greg-dueh": 24,
         "t-dog-hitman": 32,
-        "loyd": 21
+        "roy-hoenisch": 21
       },
       "rating": 71.0
     }
@@ -1359,7 +1359,7 @@
       "place": 6
     },
     {
-      "player": "loyd",
+      "player": "roy-hoenisch",
       "gross": 483,
       "net": 393.0,
       "place": 7
@@ -1432,7 +1432,7 @@
       "pars": 3,
       "birdies": 0
     },
-    "loyd": {
+    "roy-hoenisch": {
       "pars": 15,
       "birdies": 2
     }
@@ -1443,7 +1443,7 @@
         "mist": [
           "dan-shelbo-sr",
           "deadman",
-          "loyd",
+          "roy-hoenisch",
           "t-dog-hitman",
           "tom-conroy",
           "troy"
@@ -1468,7 +1468,7 @@
               "weedPts": 1.0
             },
             {
-              "mist": "loyd",
+              "mist": "roy-hoenisch",
               "weed": "phil-fowler",
               "mistPts": 0.0,
               "weedPts": 1.0
@@ -1535,7 +1535,7 @@
               "weedPts": 0.0
             },
             {
-              "mist": "loyd",
+              "mist": "roy-hoenisch",
               "weed": "dan-travisano",
               "mistPts": 1.0,
               "weedPts": 0.0
@@ -1554,7 +1554,7 @@
               "weedPts": 0.0
             },
             {
-              "mist": "loyd",
+              "mist": "roy-hoenisch",
               "weed": "dan-taber",
               "mistPts": 0.0,
               "weedPts": 1.0
@@ -1609,7 +1609,7 @@
               "weedPts": 1.0
             },
             {
-              "mist": "loyd",
+              "mist": "roy-hoenisch",
               "weed": "jim-fowler",
               "mistPts": 0.0,
               "weedPts": 1.0
@@ -1646,7 +1646,7 @@
               "weedPts": 1.0
             },
             {
-              "mist": "loyd",
+              "mist": "roy-hoenisch",
               "weed": "dan-travisano",
               "mistPts": 1.0,
               "weedPts": 0.0
@@ -1715,7 +1715,7 @@
           "losses": 4,
           "ties": 0
         },
-        "loyd": {
+        "roy-hoenisch": {
           "wins": 2,
           "losses": 3,
           "ties": 0
@@ -1741,7 +1741,7 @@
           "ties": 0
         }
       },
-      "note": "Deadman's matches are recorded as '<carrier> (DM)' \u2014 a rotating Mist player carried the Deadman ball each day; all such rows are credited to 'deadman'. HHScoresHistory instead folded some DM results into the carriers' records (TC 5-1, Loyd 3-3, Shelbo 1-5 there) and has no Deadman row \u2014 workbook table kept here; team result identical either way."
+      "note": "Deadman's matches are recorded as '<carrier> (DM)' \u2014 a rotating Mist player carried the Deadman ball each day; all such rows are credited to 'deadman'. HHScoresHistory instead folded some DM results into the carriers' records (TC 5-1, Roy 3-3, Shelbo 1-5 there) and has no Deadman row \u2014 workbook table kept here; team result identical either way."
     },
     "lostBall": {
       "tom-conroy": 130,
@@ -1753,7 +1753,7 @@
       "dan-shelbo-sr": 111,
       "dan-travisano": 83,
       "jeff": 106,
-      "loyd": 97,
+      "roy-hoenisch": 97,
       "dan-taber": 99
     }
   }

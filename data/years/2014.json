@@ -257,7 +257,7 @@
           5,
           8
         ],
-        "loyd": [
+        "roy-hoenisch": [
           5,
           6,
           6,
@@ -290,7 +290,7 @@
         "cookie-ac-milan": 12,
         "greg-dueh": 21,
         "t-dog-hitman": 25,
-        "loyd": 18
+        "roy-hoenisch": 18
       },
       "rating": 70.8,
       "slope": 132
@@ -541,7 +541,7 @@
           3,
           8
         ],
-        "loyd": [
+        "roy-hoenisch": [
           6,
           6,
           8,
@@ -574,7 +574,7 @@
         "cookie-ac-milan": 12,
         "greg-dueh": 21,
         "t-dog-hitman": 25,
-        "loyd": 18
+        "roy-hoenisch": 18
       },
       "rating": 67.6,
       "slope": 120
@@ -825,7 +825,7 @@
           5,
           8
         ],
-        "loyd": [
+        "roy-hoenisch": [
           6,
           7,
           7,
@@ -858,7 +858,7 @@
         "cookie-ac-milan": 13,
         "greg-dueh": 21,
         "t-dog-hitman": 26,
-        "loyd": 17
+        "roy-hoenisch": 17
       },
       "rating": 68.9,
       "slope": 126
@@ -1109,7 +1109,7 @@
           7,
           10
         ],
-        "loyd": [
+        "roy-hoenisch": [
           6,
           10,
           6,
@@ -1142,7 +1142,7 @@
         "cookie-ac-milan": 12,
         "greg-dueh": 20,
         "t-dog-hitman": 25,
-        "loyd": 18
+        "roy-hoenisch": 18
       },
       "rating": 68.6,
       "slope": 120
@@ -1393,7 +1393,7 @@
           8,
           7
         ],
-        "loyd": [
+        "roy-hoenisch": [
           4,
           4,
           4,
@@ -1426,7 +1426,7 @@
         "cookie-ac-milan": 13,
         "greg-dueh": 22,
         "t-dog-hitman": 32,
-        "loyd": 18
+        "roy-hoenisch": 18
       },
       "rating": 69.6,
       "slope": 131
@@ -1470,7 +1470,7 @@
       "place": 6
     },
     {
-      "player": "loyd",
+      "player": "roy-hoenisch",
       "gross": 468,
       "net": 379.0,
       "place": 7
@@ -1553,7 +1553,7 @@
       "pars": 3,
       "birdies": 0
     },
-    "loyd": {
+    "roy-hoenisch": {
       "pars": 18,
       "birdies": 3
     }
@@ -1565,7 +1565,7 @@
           "brent-bartholomew",
           "dan-shelbo-sr",
           "joe-dueh",
-          "loyd",
+          "roy-hoenisch",
           "t-dog-hitman",
           "tom-conroy"
         ],
@@ -1595,7 +1595,7 @@
               "weedPts": 1.0
             },
             {
-              "mist": "loyd",
+              "mist": "roy-hoenisch",
               "weed": "jim-fowler",
               "mistPts": 0.0,
               "weedPts": 1.0
@@ -1638,7 +1638,7 @@
               "weedPts": 1.0
             },
             {
-              "mist": "loyd",
+              "mist": "roy-hoenisch",
               "weed": "phil-fowler",
               "mistPts": 1.0,
               "weedPts": 0.0
@@ -1681,7 +1681,7 @@
               "weedPts": 0.0
             },
             {
-              "mist": "loyd",
+              "mist": "roy-hoenisch",
               "weed": "cookie-ac-milan",
               "mistPts": 1.0,
               "weedPts": 0.0
@@ -1724,7 +1724,7 @@
               "weedPts": 1.0
             },
             {
-              "mist": "loyd",
+              "mist": "roy-hoenisch",
               "weed": "phil-fowler",
               "mistPts": 0.0,
               "weedPts": 1.0
@@ -1793,7 +1793,7 @@
           "losses": 0,
           "ties": 1
         },
-        "loyd": {
+        "roy-hoenisch": {
           "wins": 2,
           "losses": 2,
           "ties": 0

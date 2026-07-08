@@ -17,9 +17,11 @@
         "Big Gay Roy",
         "Roy",
         "ROY",
-        "BGR"
+        "BGR",
+        "Loyd",
+        "Big Gay Loyd"
       ],
-      "note": "Joined 2006, replacing the 2005 stand-in 'Big Gay Al' — went by 'Big Gay Roy' as a joke about that. Different person from Big Gay Al AND from Loyd. Ryan confirmed 2026-07-04: 'BGR' in 2020-21 = Roy (back after 2011). (In 2013-2016 sheets, 'Roy'/'BGR' shorthand meant Loyd via per-year overrides.)"
+      "note": "Ryan's final ruling 2026-07-08 (from Roy himself): every 'Big Gay' name except Big Gay Al (the one-year 2005 stand-in) is Roy Hoenisch — 'Big Gay Roy', 'BGR', 'Roy', and 'Big Gay Loyd' (2012-2018) all map here. There is no separate Loyd. Roy: 2006, 2008, 2010-2018, 2020-2025."
     },
     {
       "id": "billy",
@@ -47,15 +49,6 @@
         "Bruce Morris",
         "Bruce"
       ]
-    },
-    {
-      "id": "loyd",
-      "name": "Loyd",
-      "aliases": [
-        "Loyd",
-        "Big Gay Loyd"
-      ],
-      "note": "'Big Gay' is an evolving joke name (cf. Big Gay Al 2005, Big Gay Roy/Roy Hoenisch 2006+). Ryan CONFIRMED (twice, latest 2026-07-04): Loyd and Roy Hoenisch are different people — do not merge, do not re-ask. The 2013 Mist-Weed sheet calling him 'Roy' is a naming slip. Full name TBD."
     },
     {
       "id": "cookie-ac-milan",
