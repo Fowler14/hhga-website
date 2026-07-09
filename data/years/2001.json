@@ -1618,10 +1618,21 @@
       "roundsPlayed": 3
     }
   ],
-  "champion": "tom-conroy",
-  "championNote": "Verified by Ryan 2026-07-02: champion = lowest net (Tom Conroy 832), not the gross ranking in the workbook's '2001 Total Strokes' sheet.",
+  "champion": "jim-fowler",
+  "championNote": "Champion per Jimmy's 'HHGA Web site design.doc' (fact, Ryan 2026-07-08): Jimmy \u2014 'wears down the field and wins with a 90 at Shipyard... three years out of 4, Jimmy makes it three for three.' Supersedes the earlier cumulative-net reading. Leaderboard below = cumulative standings, not the championship result.",
   "dateNote": "Rounds 2-6 dated year 2000 in the workbook (template typo); corrected to 2001.",
   "parNotes": [
     "Round 3: PAR total cell says 108, hole-by-hole par sums to 107 (used the holes)."
-  ]
+  ],
+  "championship": {
+    "finalFour": [
+      "jim-fowler",
+      "tom-conroy",
+      "dan-taber",
+      "joe-dueh"
+    ],
+    "championshipCourse": "Shipyard",
+    "format": "gross (18-hole rounds)"
+  },
+  "story": "Jimmy wears down the field and wins with a 90 at Shipyard \u2014 three titles in a row. Johnny gets called home from Crescent Point, sick child."
 }

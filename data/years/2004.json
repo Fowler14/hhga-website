@@ -1339,8 +1339,8 @@
       "place": 8
     }
   ],
-  "champion": "jim-fowler",
-  "championNote": "Verified by Ryan 2026-07-02: champion = lowest net (Jim Fowler 555, one ahead of Phil Fowler 556).",
+  "champion": "tom-conroy",
+  "championNote": "Champion per Jimmy's 'HHGA Web site design.doc' (fact, Ryan 2026-07-08): TC \u2014 'hits two 30 footers down the stretch to pull away from Phil.' Supersedes the earlier cumulative-net reading. Leaderboard below = cumulative standings, not the championship result.",
   "rosterNote": "Ryan confirmed: 'Dueh, Jr.' = Joe Dueh (same person); 'Pappy Williams' = John Williams. 36-hole day Mar 11 confirmed real.",
   "sideGames": {
     "winnings": {
@@ -1353,5 +1353,18 @@
       "greg-dueh": -48.25,
       "john-williams": -54.25
     }
-  }
+  },
+  "championship": {
+    "finalFour": [
+      "phil-fowler",
+      "tom-conroy",
+      "jim-fowler",
+      "dan-taber"
+    ],
+    "championshipCourse": "MBN West"
+  },
+  "warmups": [
+    "MBN King's North"
+  ],
+  "story": "TC hits two 30-footers down the stretch to pull away from Phil. After Pappy sells the Hilton Head condo, Trav opens up Myrtle Beach and a whole new world for the HHGA."
 }

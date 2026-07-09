@@ -1062,8 +1062,8 @@
       "place": 8
     }
   ],
-  "champion": "dan-taber",
-  "championNote": "Verified by Ryan 2026-07-04: champion = Dan Taber (374, by 8), per the official LeaderBoard sheet.",
+  "champion": "phil-fowler",
+  "championNote": "Champion per Jimmy's 'HHGA Web site design.doc' (fact, Ryan 2026-07-08): Phil \u2014 'Long Bay-Gate': picks the championship course, then wins it there. Supersedes the earlier cumulative-net reading. Leaderboard below = cumulative standings, not the championship result.",
   "stats": {
     "tom-conroy": {
       "pars": 10,
@@ -1097,5 +1097,19 @@
       "pars": 9,
       "birdies": 2
     }
-  }
+  },
+  "championship": {
+    "finalFour": [
+      "phil-fowler",
+      "dan-taber",
+      "jim-fowler",
+      "john-taber"
+    ],
+    "championshipCourse": "Long Bay"
+  },
+  "warmups": [
+    "MBN Southcreek",
+    "MBN West"
+  ],
+  "story": "'Long Bay-Gate': Phil picks the championship course and then proceeds to win it there. Warmest week ever, drinks by the pool, down to 8 diehards \u2014 the economy taking its toll."
 }

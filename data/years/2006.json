@@ -1496,7 +1496,21 @@
       "place": 12
     }
   ],
-  "champion": "dan-travisano",
-  "championNote": "Verified by Ryan 2026-07-02: champion = lowest net (Dan Travisano 426).",
-  "dateNote": "Score-sheet dates are template leftovers; trip dated ~Mar 5-9 2006 from the money-calculator files \u2014 estimated, Ryan to confirm."
+  "champion": "joe-dueh",
+  "championNote": "Champion per Jimmy's 'HHGA Web site design.doc' (fact, Ryan 2026-07-08): Joe \u2014 'wins his first of two at King's North applying the 2 year plan to perfection.' Supersedes the earlier cumulative-net reading. Leaderboard below = cumulative standings, not the championship result.",
+  "dateNote": "Score-sheet dates are template leftovers; trip dated ~Mar 5-9 2006 from the money-calculator files \u2014 estimated, Ryan to confirm.",
+  "championship": {
+    "finalFour": [
+      "joe-dueh",
+      "tom-conroy",
+      "dan-travisano",
+      "john-taber"
+    ],
+    "championshipCourse": "Kings North"
+  },
+  "warmups": [
+    "Man O War",
+    "Wizard"
+  ],
+  "story": "Joe wins his first of two at King's North, applying the '2-year plan' to perfection. Big Gay Al didn't fit in and didn't return \u2014 his replacement, the one and only Roy Hoenisch: indirectly related by marriage, the much-heralded 4th Fowler on the tour."
 }

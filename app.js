@@ -3,11 +3,15 @@
 
 const $ = (sel, el) => (el || document).querySelector(sel);
 
-const state = { data: null, names: {}, players: {} };
+const state = { data: null, names: {}, players: {}, photos: null };
 
 async function loadData() {
-  const res = await fetch("data/hhga.json");
+  const [res, resPhotos] = await Promise.all([
+    fetch("data/hhga.json"),
+    fetch("data/photos.json"),
+  ]);
   state.data = await res.json();
+  state.photos = await resPhotos.json();
   for (const p of state.data.players) {
     state.names[p.id] = p.name;
     state.players[p.id] = p;
@@ -28,8 +32,20 @@ function fmtDates(yr) {
 }
 
 function championScore(yr) {
-  const top = yr.leaderboard[0];
-  return yr.scoring === "gross" ? `${top.gross} (gross)` : `net ${top.net}`;
+  if (!yr.leaderboard.length) return "";
+  const e = yr.leaderboard.find((v) => v.player === yr.champion) || yr.leaderboard[0];
+  return yr.scoring === "gross" ? `${e.gross} (gross)` : `net ${e.net}`;
+}
+
+function photosFor(year) {
+  return state.photos.photos.filter((p) => p.year === year);
+}
+
+function photoCard(p, big) {
+  return `<figure class="photo${big ? " big" : ""}">
+    <img src="photos/${p.file}" alt="${esc(p.caption)}" loading="lazy">
+    <figcaption>${esc(p.caption)}</figcaption>
+  </figure>`;
 }
 
 /* ---------------------------------------------------------------- home */
@@ -38,6 +54,14 @@ function renderHome() {
   const d = state.data;
   const years = d.years;
   const latest = years[years.length - 1];
+
+  // hero photo
+  const heroFile = state.photos.hero;
+  const heroMeta = state.photos.photos.find((p) => p.file === heroFile);
+  const heroEl = $("#hero-photo");
+  if (heroEl && heroFile) {
+    heroEl.innerHTML = photoCard(heroMeta || { file: heroFile, caption: "" }, true);
+  }
 
   $("#champ-name").textContent = nameOf(latest.champion);
   $("#champ-detail").textContent =
@@ -71,8 +95,9 @@ function renderHome() {
   for (const y of [...years].reverse()) {
     const a = document.createElement("a");
     a.href = `years.html#${y.year}`;
+    const who = y.champion ? esc(nameOf(y.champion)) : "Rained out — no champion";
     a.innerHTML = `<div class="yr">${y.year} · ${esc(shortLoc(y.location))}</div>
-                   <div class="who">${esc(nameOf(y.champion))}</div>`;
+                   <div class="who">${who}</div>`;
     wall.appendChild(a);
   }
 
@@ -120,23 +145,68 @@ function showYear(yearNum) {
   const out = $("#year-view");
   out.innerHTML = "";
 
+  const meta = yr.noScores
+    ? `${(yr.attendees || []).length} attendees`
+    : `${fmtDates(yr)} · ${yr.rounds.length} rounds · ${yr.leaderboard.length} players · scoring: ${yr.scoring}`;
   const head = document.createElement("div");
   head.innerHTML = `
     <h2>${yr.year} — ${esc(yr.location)}</h2>
-    <p class="muted">${fmtDates(yr)} · ${yr.rounds.length} rounds ·
-      ${yr.leaderboard.length} players · scoring: ${yr.scoring}</p>
-    <div class="chips">${yr.courses.map((c) => `<span class="chip">${esc(c)}</span>`).join("")}</div>`;
+    <p class="muted">${meta}</p>
+    <div class="chips">
+      ${yr.courses.map((c) => `<span class="chip">${esc(c)}</span>`).join("")}
+      ${(yr.warmups || []).map((c) => `<span class="chip warm">warmup: ${esc(c)}</span>`).join("")}
+    </div>
+    ${yr.coursesNote ? `<p class="muted">${esc(yr.coursesNote)}</p>` : ""}`;
   out.appendChild(head);
 
-  // leaderboard
+  // Jimmy's story
+  if (yr.story) {
+    const st = document.createElement("div");
+    st.className = "card story";
+    st.innerHTML = `${yr.champion ? `<div class="badge">Champion: ${esc(nameOf(yr.champion))}</div>` : ""}
+      <p>${esc(yr.story)}</p>
+      <p class="muted">— from Jimmy's HHGA history</p>`;
+    out.appendChild(st);
+  }
+
+  // championship / final four block (1999-2009 format)
+  const ch = yr.championship;
+  if (ch) {
+    const sec = document.createElement("div");
+    const four = ch.finalFour || ch.finalThree;
+    const label = ch.finalFour ? "Final Four" : "Final Threesome";
+    sec.innerHTML = `<h3>The Championship</h3>
+      <p><b>${label}:</b> ${four.map((p) =>
+        `<a href="players.html#${p}">${esc(nameOf(p))}</a>${p === yr.champion ? " \u{1F3C6}" : ""}`).join(" · ")}
+      <br><b>Championship course:</b> ${esc(ch.championshipCourse)}
+      ${ch.format ? `<br><b>Format:</b> ${esc(ch.format)}` : ""}</p>`;
+    out.appendChild(sec);
+  }
+
+  // score-less years stop here
+  if (yr.noScores) {
+    if (yr.attendees) {
+      const at = document.createElement("div");
+      at.innerHTML = `<h3>Attendees</h3><p>${yr.attendees.map((p) =>
+        `<a href="players.html#${p}">${esc(nameOf(p))}</a>`).join(" · ")}</p>
+        <p class="muted">No scoresheets survive from this year.</p>`;
+      out.appendChild(at);
+    }
+    appendYearPhotos(out, yr.year);
+    return;
+  }
+
+  // leaderboard (cumulative standings; champion may differ pre-2010)
   const lbSec = document.createElement("div");
   const hasNet = yr.scoring !== "gross";
-  lbSec.innerHTML = `<h3>Leaderboard</h3>`;
+  const lbTitle = yr.championship ? "Standings (cumulative)" : "Leaderboard";
+  lbSec.innerHTML = `<h3>${lbTitle}</h3>`;
   const rows = yr.leaderboard.map((e) => {
     const extra = e.roundsPlayed ? ` <span class="muted">(${e.roundsPlayed} rounds)</span>` : "";
-    return `<tr class="${e.place === 1 ? "first" : ""}">
+    const isChamp = e.player === yr.champion;
+    return `<tr class="${isChamp ? "first" : ""}">
       <td>${e.place ?? "—"}</td>
-      <td><a href="players.html#${e.player}">${esc(nameOf(e.player))}</a>${e.place === 1 ? " \u{1F3C6}" : ""}${extra}</td>
+      <td><a href="players.html#${e.player}">${esc(nameOf(e.player))}</a>${isChamp ? " \u{1F3C6}" : ""}${extra}</td>
       <td>${e.gross ?? "—"}</td>
       ${hasNet ? `<td>${e.net ?? "—"}</td>` : ""}
     </tr>`;
@@ -171,6 +241,17 @@ function showYear(yearNum) {
   sc.innerHTML = "<h3>Scorecards</h3>";
   for (const r of yr.rounds) sc.appendChild(scorecard(yr, r));
   out.appendChild(sc);
+
+  appendYearPhotos(out, yr.year);
+}
+
+function appendYearPhotos(out, year) {
+  const pics = photosFor(year);
+  if (!pics.length) return;
+  const sec = document.createElement("div");
+  sec.innerHTML = `<h3>Photos</h3>
+    <div class="photogrid">${pics.map((p) => photoCard(p)).join("")}</div>`;
+  out.appendChild(sec);
 }
 
 function renderMistWeed(out, mw) {
@@ -270,8 +351,18 @@ function playerCareer(pid) {
   const seasons = [];
   for (const y of state.data.years) {
     const e = y.leaderboard.find((v) => v.player === pid);
-    if (e) seasons.push({ year: y.year, place: e.place, of: y.leaderboard.length,
-                          gross: e.gross, net: e.net, champion: y.champion === pid });
+    if (e) {
+      seasons.push({ year: y.year, place: e.place, of: y.leaderboard.length,
+                     gross: e.gross, net: e.net, champion: y.champion === pid,
+                     finalFour: !!(y.championship &&
+                       (y.championship.finalFour || y.championship.finalThree || []).includes(pid)) });
+    } else if ((y.attendees || []).includes(pid)) {
+      seasons.push({ year: y.year, place: null, of: y.attendees.length,
+                     gross: null, net: null, champion: y.champion === pid,
+                     finalFour: !!(y.championship &&
+                       (y.championship.finalFour || y.championship.finalThree || []).includes(pid)),
+                     noScores: true });
+    }
   }
   return seasons;
 }
@@ -312,10 +403,12 @@ function showPlayer(pid) {
   const best = placed.length ? Math.min(...placed.map((s) => s.place)) : null;
   const avg = placed.length ? (placed.reduce((a, s) => a + s.place, 0) / placed.length) : null;
 
+  const ffCount = c.filter((s) => s.finalFour).length;
   $("#p-name").textContent = nameOf(pid);
   $("#p-sub").textContent =
     `${c.length} trips (${c[0].year}–${c[c.length - 1].year})` +
-    (wins.length ? ` · Champion: ${wins.map((s) => s.year).join(", ")}` : "");
+    (wins.length ? ` · Champion: ${wins.map((s) => s.year).join(", ")}` : "") +
+    (ffCount ? ` · ${ffCount} Final Four${ffCount > 1 ? "s" : ""} ('99–'09 era)` : "");
   $("#p-wins").textContent = wins.length;
   $("#p-best").textContent = best ? ordinal(best) : "—";
   $("#p-avg").textContent = avg ? avg.toFixed(1) : "—";
@@ -326,7 +419,7 @@ function showPlayer(pid) {
     <tbody>${[...c].reverse().map((s) => `
       <tr class="${s.champion ? "first" : ""}">
         <td><a href="years.html#${s.year}">${s.year}</a></td>
-        <td>${s.place != null ? `${s.place} of ${s.of}` : "—"}${s.champion ? " \u{1F3C6}" : ""}</td>
+        <td>${s.place != null ? `${s.place} of ${s.of}` : (s.noScores ? "attended" : "—")}${s.champion ? " \u{1F3C6}" : ""}${s.finalFour && !s.champion ? " <span class=\"muted\">FF</span>" : ""}</td>
         <td>${s.gross ?? "—"}</td><td>${s.net ?? "—"}</td>
       </tr>`).join("")}</tbody>`;
 
@@ -353,6 +446,27 @@ function showPlayer(pid) {
   });
 }
 
+/* -------------------------------------------------------------- gallery */
+
+function renderGallery() {
+  const out = $("#gallery");
+  const byYear = state.photos.photos.filter((p) => p.year);
+  const rest = state.photos.photos.filter((p) => !p.year);
+  const years = [...new Set(byYear.map((p) => p.year))].sort((a, b) => b - a);
+  for (const y of years) {
+    const sec = document.createElement("div");
+    sec.innerHTML = `<h3><a href="years.html#${y}">${y}</a></h3>
+      <div class="photogrid">${byYear.filter((p) => p.year === y).map((p) => photoCard(p)).join("")}</div>`;
+    out.appendChild(sec);
+  }
+  if (rest.length) {
+    const sec = document.createElement("div");
+    sec.innerHTML = `<h3>Timeless</h3>
+      <div class="photogrid">${rest.map((p) => photoCard(p)).join("")}</div>`;
+    out.appendChild(sec);
+  }
+}
+
 /* -------------------------------------------------------------- helpers */
 
 function shortLoc(loc) {
@@ -374,6 +488,7 @@ loadData().then(() => {
   if (page === "home") renderHome();
   else if (page === "years") renderYears();
   else if (page === "players") renderPlayers();
+  else if (page === "gallery") renderGallery();
 }).catch((err) => {
   document.querySelector("main").insertAdjacentHTML("afterbegin",
     `<div class="card">Failed to load data/hhga.json — ${esc(err.message)}.

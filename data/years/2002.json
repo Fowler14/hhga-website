@@ -1457,8 +1457,8 @@
       "place": 8
     }
   ],
-  "champion": "joe-dueh",
-  "championNote": "Verified by Ryan 2026-07-02: champion = lowest net (Joe Dueh 578.5). Phil Fowler had the lowest gross (648) but played off 0 as a first-year player.",
+  "champion": "phil-fowler",
+  "championNote": "Champion per Jimmy's 'HHGA Web site design.doc' (fact, Ryan 2026-07-08): Phil \u2014 rookie year: 'pummels the field and shoots a 90 at Shipyard', triggering the handicap era. Supersedes the earlier cumulative-net reading. Leaderboard below = cumulative standings, not the championship result.",
   "roundNote": "Sheet numbers the final round '6' (no round 5); renumbered to 5 \u2014 dates are consecutive Mar 12-16.",
   "sideGames": {
     "winnings": {
@@ -1471,5 +1471,16 @@
       "john-taber": -38.0,
       "john-williams": -75.5
     }
-  }
+  },
+  "championship": {
+    "finalFour": [
+      "phil-fowler",
+      "joe-dueh",
+      "jim-fowler",
+      "tom-conroy"
+    ],
+    "championshipCourse": "Shipyard",
+    "format": "gross (18-hole rounds)"
+  },
+  "story": "The days of innocence are over: rookie Phil pummels the field and shoots a 90 at Shipyard \u2014 the last year gross scores crown a champion. Phil brings a wretched pink jacket as the trophy. TC's first swing puts his new 3-wood clubhead in the pond; fear of alligators keeps him from retrieving it. Jose retires."
 }

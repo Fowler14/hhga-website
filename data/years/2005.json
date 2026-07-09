@@ -1493,5 +1493,18 @@
   ],
   "champion": "greg-dueh",
   "championNote": "Verified by Ryan 2026-07-02: champion = lowest net (Greg Dueh 418). Duck = Don Fowler, Bruce = Bruce Morris. Big Gay Al was a one-time stand-in (real name unknown), not Roy Hoenisch.",
-  "dateNote": "Only round 1's date (2005-03-08) is reliable; later rows kept 2004 template dates. Rounds dated as consecutive days Mar 8-12 \u2014 estimated, Ryan to confirm (there may have been a 36-hole day)."
+  "dateNote": "Only round 1's date (2005-03-08) is reliable; later rows kept 2004 template dates. Rounds dated as consecutive days Mar 8-12 \u2014 estimated, Ryan to confirm (there may have been a 36-hole day).",
+  "championship": {
+    "finalFour": [
+      "dan-taber",
+      "greg-dueh",
+      "dan-travisano",
+      "jim-fowler"
+    ],
+    "championshipCourse": "Wachesaw East"
+  },
+  "warmups": [
+    "Wizard"
+  ],
+  "story": "In the heat and wind at Wachesaw East, Greg's patented low boring shot takes the jacket. First year in two condos; the Florida contingent arrives: Bruce Morris and his friend Al, who quickly earns the nickname 'Big Gay' and never returns."
 }

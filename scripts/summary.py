@@ -21,20 +21,21 @@ lines = [
 ]
 
 for yr in data["years"]:
-    champ = players[yr["champion"]]
-    lb = yr["leaderboard"][0]
-    score = lb.get("net", lb.get("gross"))
+    champ = players[yr["champion"]] if yr.get("champion") else "— (washout)"
+    lb = yr["leaderboard"][0] if yr["leaderboard"] else None
+    score = (lb.get("net", lb.get("gross")) if lb else None)
     mw = ""
     mwd = yr.get("sideGames", {}).get("mistWeed")
     if mwd and mwd.get("final"):
         f = mwd["final"]
         mw = f"{mwd['winner'].title()} {f['mist']:g}-{f['weed']:g}"
     courses = ", ".join(yr["courses"])
-    n = len(yr["leaderboard"])
+    n = len(yr["leaderboard"]) or len(yr.get("attendees", []))
     scoring = " (gross)" if yr.get("scoring") == "gross" else ""
+    score_s = f"{score:g}{scoring}" if score is not None else "—"
     lines.append(
         f"| {yr['year']} | {yr['location']} | {courses} | {n} "
-        f"| **{champ}** | {score:g}{scoring} | {mw} |")
+        f"| **{champ}** | {score_s} | {mw} |")
 
 lines += [
     "",
@@ -43,7 +44,8 @@ lines += [
 ]
 titles = {}
 for yr in data["years"]:
-    titles[yr["champion"]] = titles.get(yr["champion"], 0) + 1
+    if yr.get("champion"):
+        titles[yr["champion"]] = titles.get(yr["champion"], 0) + 1
 for pid, n in sorted(titles.items(), key=lambda kv: -kv[1]):
     lines.append(f"- {players[pid]}: {n}")
 

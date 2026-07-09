@@ -1228,5 +1228,15 @@
   ],
   "champion": "john-williams",
   "championNote": "Verified by Ryan 2026-07-02: champion = lowest net (John Williams 544.5, hcp 25).",
-  "formatNote": "Rounds 1-4 are 27 holes; round 5 (Arthur Hill) is 18. The workbook applies net = gross - 1.5*handicap to every round including the 18-hole one; year total follows the workbook."
+  "formatNote": "Rounds 1-4 are 27 holes; round 5 (Arthur Hill) is 18. The workbook applies net = gross - 1.5*handicap to every round including the 18-hole one; year total follows the workbook.",
+  "championship": {
+    "finalFour": [
+      "jim-fowler",
+      "dan-taber",
+      "john-williams",
+      "greg-dueh"
+    ],
+    "championshipCourse": "Arthur Hill"
+  },
+  "story": "Pappy leverages the first year of handicap scoring to crush the field \u2014 low net every single day, a beatdown never replicated. Joe skips for Hawaii with his wife. Last year at Hilton Head; Pappy sells the condo. We love Pappy."
 }

@@ -1,0 +1,23 @@
+{
+  "_note": "Photos from Jimmy's archive. 'year' ties a photo to a year page; photos without a year appear in the Gallery only. Captions are drafts — Ryan/Jimmy to correct.",
+  "hero": "hh-2003.jpg",
+  "photos": [
+    { "file": "hh-2003.jpg",              "year": 2003, "caption": "Hilton Head 2003 — Pappy in the pink jacket, champion's night" },
+    { "file": "2003-champ.jpg",           "year": 2003, "caption": "2003 — champion Pappy" },
+    { "file": "myrtle-2005.jpg",          "year": 2005, "caption": "Myrtle Beach 2005 — the first 12-man year" },
+    { "file": "final-four-2005.jpg",      "year": 2005, "caption": "2005 Final Four — Greg, Jimmy, Dano, Trav at Wachesaw East" },
+    { "file": "myrtle-2007.jpg",          "year": 2007, "caption": "Myrtle Beach 2007" },
+    { "file": "tcchamp2007.jpg",          "year": 2007, "caption": "TC, 2007" },
+    { "file": "champbruce-2007.jpg",      "year": 2007, "caption": "Bruce, 2007 — Final Four" },
+    { "file": "kneeschamp-2007.jpg",      "year": 2007, "caption": "Knees, 2007" },
+    { "file": "travthechamp-2007.jpg",    "year": 2007, "caption": "Trav, 2007" },
+    { "file": "teammist-2007.jpg",        "year": 2007, "caption": "Team Mist, 2007" },
+    { "file": "teamweed-2007.jpg",        "year": 2007, "caption": "Team Weed, 2007" },
+    { "file": "brobillflask-2007.jpg",    "year": 2007, "caption": "Brother Bill and the flask, 2007" },
+    { "file": "pappylookingforballs.jpg", "caption": "Pappy, looking for balls" },
+    { "file": "johnnyob.jpg",             "caption": "Johnny, OB" },
+    { "file": "gregofthenorth.jpg",       "caption": "Greg of the North" },
+    { "file": "gator-golf.jpg",           "caption": "Local rules: play it as it lies" },
+    { "file": "turtle.jpg",               "caption": "Slow play warning" }
+  ]
+}

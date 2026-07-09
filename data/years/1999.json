@@ -1,0 +1,33 @@
+{
+  "year": 1999,
+  "location": "Hilton Head Island, SC",
+  "courses": [
+    "Old Carolina",
+    "Old South",
+    "Shipyard"
+  ],
+  "coursesNote": "Partial \u2014 two courses unknown ('Old Carolina, Old South, ??, ??, Shipyard').",
+  "rounds": [],
+  "leaderboard": [],
+  "attendees": [
+    "jim-fowler",
+    "dan-taber",
+    "tom-conroy",
+    "john-taber",
+    "john-williams",
+    "jose-perna",
+    "joe-dueh"
+  ],
+  "champion": "jim-fowler",
+  "championNote": "From Jimmy's history (fact per Ryan): first-ever HHGA championship. No scores survive.",
+  "championship": {
+    "finalThree": [
+      "jim-fowler",
+      "john-taber",
+      "joe-dueh"
+    ],
+    "championshipCourse": "Shipyard"
+  },
+  "story": "Jimmy outlasts Joe and Johnny at Shipyard \u2014 the round is lost for Joe when a single is put in the final threesome, Johnny fades early, and Jimmy cruises to the first ever HHGA championship. First year as guests at Pappy's condo: the condo is cool, the hot tub is warm. Van from Johnny's to Philly, fly to Savannah. The start of it all \u2014 the rest is history.",
+  "noScores": true
+}

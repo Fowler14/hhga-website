@@ -1,5 +1,7 @@
-# Source archive — personal docs, minutes, receipts. NEVER publish.
+# Source archives — personal docs, minutes, receipts. NEVER publish.
+# (photos/ holds the web copies that ARE meant to publish)
 HH/
+Jimmy_Data/
 
 # local tooling
 .claude/

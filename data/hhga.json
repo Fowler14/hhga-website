@@ -285,6 +285,59 @@
   ],
   "years": [
     {
+      "year": 1998,
+      "location": "Fayetteville, NC",
+      "courses": [],
+      "rounds": [],
+      "leaderboard": [],
+      "attendees": [
+        "jim-fowler",
+        "dan-taber",
+        "tom-conroy",
+        "john-taber",
+        "john-williams",
+        "jose-perna",
+        "joe-dueh"
+      ],
+      "champion": null,
+      "championNote": "No champion \u2014 total washout (Jimmy's history, fact per Ryan).",
+      "story": "The year it all started (for Jimmy anyway). Fayetteville, North Carolina: a total washout \u2014 it rained every day. Forever known as 'Fayette-nam'. But it started a tradition of golf man-cations.",
+      "noScores": true
+    },
+    {
+      "year": 1999,
+      "location": "Hilton Head Island, SC",
+      "courses": [
+        "Old Carolina",
+        "Old South",
+        "Shipyard"
+      ],
+      "coursesNote": "Partial \u2014 two courses unknown ('Old Carolina, Old South, ??, ??, Shipyard').",
+      "rounds": [],
+      "leaderboard": [],
+      "attendees": [
+        "jim-fowler",
+        "dan-taber",
+        "tom-conroy",
+        "john-taber",
+        "john-williams",
+        "jose-perna",
+        "joe-dueh"
+      ],
+      "champion": "jim-fowler",
+      "championNote": "From Jimmy's history (fact per Ryan): first-ever HHGA championship. No scores survive.",
+      "championship": {
+        "finalThree": [
+          "jim-fowler",
+          "john-taber",
+          "joe-dueh"
+        ],
+        "championshipCourse": "Shipyard"
+      },
+      "story": "Jimmy outlasts Joe and Johnny at Shipyard \u2014 the round is lost for Joe when a single is put in the final threesome, Johnny fades early, and Jimmy cruises to the first ever HHGA championship. First year as guests at Pappy's condo: the condo is cool, the hot tub is warm. Van from Johnny's to Philly, fly to Savannah. The start of it all \u2014 the rest is history.",
+      "noScores": true
+    },
+    {
       "year": 2000,
       "location": "Hilton Head Island, SC",
       "courses": [
@@ -1739,7 +1792,18 @@
             "sandies": 0
           }
         }
-      }
+      },
+      "championship": {
+        "finalFour": [
+          "dan-taber",
+          "jim-fowler",
+          "john-taber",
+          "joe-dueh"
+        ],
+        "championshipCourse": "Shipyard",
+        "format": "gross (18-hole rounds)"
+      },
+      "story": "The only playoff in HHGA history: Jimmy and Dano tie at 471 gross, and Jimmy wins with a bogey on Shipyard #10. 'It was tense, but I was up for the challenge,' recalls Jimmy."
     },
     {
       "year": 2001,
@@ -3361,12 +3425,23 @@
           "roundsPlayed": 3
         }
       ],
-      "champion": "tom-conroy",
-      "championNote": "Verified by Ryan 2026-07-02: champion = lowest net (Tom Conroy 832), not the gross ranking in the workbook's '2001 Total Strokes' sheet.",
+      "champion": "jim-fowler",
+      "championNote": "Champion per Jimmy's 'HHGA Web site design.doc' (fact, Ryan 2026-07-08): Jimmy \u2014 'wears down the field and wins with a 90 at Shipyard... three years out of 4, Jimmy makes it three for three.' Supersedes the earlier cumulative-net reading. Leaderboard below = cumulative standings, not the championship result.",
       "dateNote": "Rounds 2-6 dated year 2000 in the workbook (template typo); corrected to 2001.",
       "parNotes": [
         "Round 3: PAR total cell says 108, hole-by-hole par sums to 107 (used the holes)."
-      ]
+      ],
+      "championship": {
+        "finalFour": [
+          "jim-fowler",
+          "tom-conroy",
+          "dan-taber",
+          "joe-dueh"
+        ],
+        "championshipCourse": "Shipyard",
+        "format": "gross (18-hole rounds)"
+      },
+      "story": "Jimmy wears down the field and wins with a 90 at Shipyard \u2014 three titles in a row. Johnny gets called home from Crescent Point, sick child."
     },
     {
       "year": 2002,
@@ -4827,8 +4902,8 @@
           "place": 8
         }
       ],
-      "champion": "joe-dueh",
-      "championNote": "Verified by Ryan 2026-07-02: champion = lowest net (Joe Dueh 578.5). Phil Fowler had the lowest gross (648) but played off 0 as a first-year player.",
+      "champion": "phil-fowler",
+      "championNote": "Champion per Jimmy's 'HHGA Web site design.doc' (fact, Ryan 2026-07-08): Phil \u2014 rookie year: 'pummels the field and shoots a 90 at Shipyard', triggering the handicap era. Supersedes the earlier cumulative-net reading. Leaderboard below = cumulative standings, not the championship result.",
       "roundNote": "Sheet numbers the final round '6' (no round 5); renumbered to 5 \u2014 dates are consecutive Mar 12-16.",
       "sideGames": {
         "winnings": {
@@ -4841,7 +4916,18 @@
           "john-taber": -38.0,
           "john-williams": -75.5
         }
-      }
+      },
+      "championship": {
+        "finalFour": [
+          "phil-fowler",
+          "joe-dueh",
+          "jim-fowler",
+          "tom-conroy"
+        ],
+        "championshipCourse": "Shipyard",
+        "format": "gross (18-hole rounds)"
+      },
+      "story": "The days of innocence are over: rookie Phil pummels the field and shoots a 90 at Shipyard \u2014 the last year gross scores crown a champion. Phil brings a wretched pink jacket as the trophy. TC's first swing puts his new 3-wood clubhead in the pond; fear of alligators keeps him from retrieving it. Jose retires."
     },
     {
       "year": 2003,
@@ -6073,7 +6159,17 @@
       ],
       "champion": "john-williams",
       "championNote": "Verified by Ryan 2026-07-02: champion = lowest net (John Williams 544.5, hcp 25).",
-      "formatNote": "Rounds 1-4 are 27 holes; round 5 (Arthur Hill) is 18. The workbook applies net = gross - 1.5*handicap to every round including the 18-hole one; year total follows the workbook."
+      "formatNote": "Rounds 1-4 are 27 holes; round 5 (Arthur Hill) is 18. The workbook applies net = gross - 1.5*handicap to every round including the 18-hole one; year total follows the workbook.",
+      "championship": {
+        "finalFour": [
+          "jim-fowler",
+          "dan-taber",
+          "john-williams",
+          "greg-dueh"
+        ],
+        "championshipCourse": "Arthur Hill"
+      },
+      "story": "Pappy leverages the first year of handicap scoring to crush the field \u2014 low net every single day, a beatdown never replicated. Joe skips for Hawaii with his wife. Last year at Hilton Head; Pappy sells the condo. We love Pappy."
     },
     {
       "year": 2004,
@@ -7416,8 +7512,8 @@
           "place": 8
         }
       ],
-      "champion": "jim-fowler",
-      "championNote": "Verified by Ryan 2026-07-02: champion = lowest net (Jim Fowler 555, one ahead of Phil Fowler 556).",
+      "champion": "tom-conroy",
+      "championNote": "Champion per Jimmy's 'HHGA Web site design.doc' (fact, Ryan 2026-07-08): TC \u2014 'hits two 30 footers down the stretch to pull away from Phil.' Supersedes the earlier cumulative-net reading. Leaderboard below = cumulative standings, not the championship result.",
       "rosterNote": "Ryan confirmed: 'Dueh, Jr.' = Joe Dueh (same person); 'Pappy Williams' = John Williams. 36-hole day Mar 11 confirmed real.",
       "sideGames": {
         "winnings": {
@@ -7430,7 +7526,20 @@
           "greg-dueh": -48.25,
           "john-williams": -54.25
         }
-      }
+      },
+      "championship": {
+        "finalFour": [
+          "phil-fowler",
+          "tom-conroy",
+          "jim-fowler",
+          "dan-taber"
+        ],
+        "championshipCourse": "MBN West"
+      },
+      "warmups": [
+        "MBN King's North"
+      ],
+      "story": "TC hits two 30-footers down the stretch to pull away from Phil. After Pappy sells the Hilton Head condo, Trav opens up Myrtle Beach and a whole new world for the HHGA."
     },
     {
       "year": 2005,
@@ -8927,7 +9036,20 @@
       ],
       "champion": "greg-dueh",
       "championNote": "Verified by Ryan 2026-07-02: champion = lowest net (Greg Dueh 418). Duck = Don Fowler, Bruce = Bruce Morris. Big Gay Al was a one-time stand-in (real name unknown), not Roy Hoenisch.",
-      "dateNote": "Only round 1's date (2005-03-08) is reliable; later rows kept 2004 template dates. Rounds dated as consecutive days Mar 8-12 \u2014 estimated, Ryan to confirm (there may have been a 36-hole day)."
+      "dateNote": "Only round 1's date (2005-03-08) is reliable; later rows kept 2004 template dates. Rounds dated as consecutive days Mar 8-12 \u2014 estimated, Ryan to confirm (there may have been a 36-hole day).",
+      "championship": {
+        "finalFour": [
+          "dan-taber",
+          "greg-dueh",
+          "dan-travisano",
+          "jim-fowler"
+        ],
+        "championshipCourse": "Wachesaw East"
+      },
+      "warmups": [
+        "Wizard"
+      ],
+      "story": "In the heat and wind at Wachesaw East, Greg's patented low boring shot takes the jacket. First year in two condos; the Florida contingent arrives: Bruce Morris and his friend Al, who quickly earns the nickname 'Big Gay' and never returns."
     },
     {
       "year": 2006,
@@ -10427,9 +10549,23 @@
           "place": 12
         }
       ],
-      "champion": "dan-travisano",
-      "championNote": "Verified by Ryan 2026-07-02: champion = lowest net (Dan Travisano 426).",
-      "dateNote": "Score-sheet dates are template leftovers; trip dated ~Mar 5-9 2006 from the money-calculator files \u2014 estimated, Ryan to confirm."
+      "champion": "joe-dueh",
+      "championNote": "Champion per Jimmy's 'HHGA Web site design.doc' (fact, Ryan 2026-07-08): Joe \u2014 'wins his first of two at King's North applying the 2 year plan to perfection.' Supersedes the earlier cumulative-net reading. Leaderboard below = cumulative standings, not the championship result.",
+      "dateNote": "Score-sheet dates are template leftovers; trip dated ~Mar 5-9 2006 from the money-calculator files \u2014 estimated, Ryan to confirm.",
+      "championship": {
+        "finalFour": [
+          "joe-dueh",
+          "tom-conroy",
+          "dan-travisano",
+          "john-taber"
+        ],
+        "championshipCourse": "Kings North"
+      },
+      "warmups": [
+        "Man O War",
+        "Wizard"
+      ],
+      "story": "Joe wins his first of two at King's North, applying the '2-year plan' to perfection. Big Gay Al didn't fit in and didn't return \u2014 his replacement, the one and only Roy Hoenisch: indirectly related by marriage, the much-heralded 4th Fowler on the tour."
     },
     {
       "year": 2007,
@@ -11848,7 +11984,21 @@
       ],
       "champion": "john-taber",
       "championNote": "Verified by Ryan 2026-07-02: champion = lowest net (John Taber 359, by one over John Williams). Billy (1 round) excluded from places.",
-      "rosterNote": "New in 2007: Irv, Craig, Billy ('Brother Billy', 1 round) \u2014 full names needed from Ryan."
+      "rosterNote": "New in 2007: Irv, Craig, Billy ('Brother Billy', 1 round) \u2014 full names needed from Ryan.",
+      "championship": {
+        "finalFour": [
+          "john-taber",
+          "bruce-morris",
+          "dan-taber",
+          "john-williams"
+        ],
+        "championshipCourse": "Mn O War"
+      },
+      "warmups": [
+        "World Turd",
+        "River Oaks"
+      ],
+      "story": "An early downpour washes out Pappy and the competition fades on familiar Man O War \u2014 Johnny birdies #18 in style with the gallery watching to win his first title. Floridian Craig 'Knees' joins the tour. Owl on Witch #2; Billy's grunting boar imitation."
     },
     {
       "year": 2008,
@@ -13466,7 +13616,20 @@
           "result": null,
           "resultNote": "Final result unknown \u2014 the doc only covers through Wednesday (4.5-4.5); Thursday singles results were not recorded in the folder."
         }
-      }
+      },
+      "championship": {
+        "finalFour": [
+          "phil-fowler",
+          "joe-dueh",
+          "dan-taber",
+          "craig"
+        ],
+        "championshipCourse": "MBN North"
+      },
+      "warmups": [
+        "MBN West"
+      ],
+      "story": "King's North becomes Joe's favorite course as he wins his 2nd championship at the tricked-up tract \u2014 'like a fish in water.' Subsequent meetings result in King's North being forever banned from championship-course play."
     },
     {
       "year": 2009,
@@ -14532,8 +14695,8 @@
           "place": 8
         }
       ],
-      "champion": "dan-taber",
-      "championNote": "Verified by Ryan 2026-07-04: champion = Dan Taber (374, by 8), per the official LeaderBoard sheet.",
+      "champion": "phil-fowler",
+      "championNote": "Champion per Jimmy's 'HHGA Web site design.doc' (fact, Ryan 2026-07-08): Phil \u2014 'Long Bay-Gate': picks the championship course, then wins it there. Supersedes the earlier cumulative-net reading. Leaderboard below = cumulative standings, not the championship result.",
       "stats": {
         "tom-conroy": {
           "pars": 10,
@@ -14567,7 +14730,21 @@
           "pars": 9,
           "birdies": 2
         }
-      }
+      },
+      "championship": {
+        "finalFour": [
+          "phil-fowler",
+          "dan-taber",
+          "jim-fowler",
+          "john-taber"
+        ],
+        "championshipCourse": "Long Bay"
+      },
+      "warmups": [
+        "MBN Southcreek",
+        "MBN West"
+      ],
+      "story": "'Long Bay-Gate': Phil picks the championship course and then proceeds to win it there. Warmest week ever, drinks by the pool, down to 8 diehards \u2014 the economy taking its toll."
     },
     {
       "year": 2010,

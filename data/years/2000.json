@@ -1453,5 +1453,16 @@
         "sandies": 0
       }
     }
-  }
+  },
+  "championship": {
+    "finalFour": [
+      "dan-taber",
+      "jim-fowler",
+      "john-taber",
+      "joe-dueh"
+    ],
+    "championshipCourse": "Shipyard",
+    "format": "gross (18-hole rounds)"
+  },
+  "story": "The only playoff in HHGA history: Jimmy and Dano tie at 471 gross, and Jimmy wins with a bogey on Shipyard #10. 'It was tense, but I was up for the challenge,' recalls Jimmy."
 }

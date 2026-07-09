@@ -2196,6 +2196,161 @@ def extract_2025(alias_lookup):
     return ex
 
 
+# ------------------------------------------------- Jimmy's archive (2026-07)
+# Source: Jimmy_Data/'HHGA Web site design.doc' (champions list = FACT per
+# Ryan) and 'Stats and calculations.xlsx' (Champ Round / Final Four flags).
+# The 1999-2009 champion was decided at a final CHAMPIONSHIP COURSE among a
+# Final Four — not by cumulative net. 2000-02 were gross-score years counted
+# on the 18-hole rounds (proven: Jimmy & Dano tie at 471 in 2000 -> the only
+# playoff in HHGA history).
+
+CHAMPION_CORRECTIONS = {
+    2001: ("jim-fowler", "Jimmy — 'wears down the field and wins with a 90 at "
+           "Shipyard... three years out of 4, Jimmy makes it three for three.'"),
+    2002: ("phil-fowler", "Phil — rookie year: 'pummels the field and shoots a 90 "
+           "at Shipyard', triggering the handicap era."),
+    2004: ("tom-conroy", "TC — 'hits two 30 footers down the stretch to pull "
+           "away from Phil.'"),
+    2006: ("joe-dueh", "Joe — 'wins his first of two at King's North applying "
+           "the 2 year plan to perfection.'"),
+    2009: ("phil-fowler", "Phil — 'Long Bay-Gate': picks the championship course, "
+           "then wins it there."),
+}
+
+YEAR_HISTORY = {  # championship-format block + Jimmy's stories, 1999-2009
+    2000: {"finalFour": ["dan-taber", "jim-fowler", "john-taber", "joe-dueh"],
+           "championshipCourse": "Shipyard", "format": "gross (18-hole rounds)",
+           "story": ("The only playoff in HHGA history: Jimmy and Dano tie at 471 "
+                     "gross, and Jimmy wins with a bogey on Shipyard #10. 'It was "
+                     "tense, but I was up for the challenge,' recalls Jimmy.")},
+    2001: {"finalFour": ["jim-fowler", "tom-conroy", "dan-taber", "joe-dueh"],
+           "championshipCourse": "Shipyard", "format": "gross (18-hole rounds)",
+           "story": ("Jimmy wears down the field and wins with a 90 at Shipyard — "
+                     "three titles in a row. Johnny gets called home from Crescent "
+                     "Point, sick child.")},
+    2002: {"finalFour": ["phil-fowler", "joe-dueh", "jim-fowler", "tom-conroy"],
+           "championshipCourse": "Shipyard", "format": "gross (18-hole rounds)",
+           "story": ("The days of innocence are over: rookie Phil pummels the field "
+                     "and shoots a 90 at Shipyard — the last year gross scores crown "
+                     "a champion. Phil brings a wretched pink jacket as the trophy. "
+                     "TC's first swing puts his new 3-wood clubhead in the pond; fear "
+                     "of alligators keeps him from retrieving it. Jose retires.")},
+    2003: {"finalFour": ["jim-fowler", "dan-taber", "john-williams", "greg-dueh"],
+           "championshipCourse": "Arthur Hill",
+           "story": ("Pappy leverages the first year of handicap scoring to crush the "
+                     "field — low net every single day, a beatdown never replicated. "
+                     "Joe skips for Hawaii with his wife. Last year at Hilton Head; "
+                     "Pappy sells the condo. We love Pappy.")},
+    2004: {"finalFour": ["phil-fowler", "tom-conroy", "jim-fowler", "dan-taber"],
+           "championshipCourse": "MBN West", "warmups": ["MBN King's North"],
+           "story": ("TC hits two 30-footers down the stretch to pull away from Phil. "
+                     "After Pappy sells the Hilton Head condo, Trav opens up Myrtle "
+                     "Beach and a whole new world for the HHGA.")},
+    2005: {"finalFour": ["dan-taber", "greg-dueh", "dan-travisano", "jim-fowler"],
+           "championshipCourse": "Wachesaw East", "warmups": ["Wizard"],
+           "story": ("In the heat and wind at Wachesaw East, Greg's patented low "
+                     "boring shot takes the jacket. First year in two condos; the "
+                     "Florida contingent arrives: Bruce Morris and his friend Al, "
+                     "who quickly earns the nickname 'Big Gay' and never returns.")},
+    2006: {"finalFour": ["joe-dueh", "tom-conroy", "dan-travisano", "john-taber"],
+           "championshipCourse": "Kings North", "warmups": ["Man O War", "Wizard"],
+           "story": ("Joe wins his first of two at King's North, applying the "
+                     "'2-year plan' to perfection. Big Gay Al didn't fit in and "
+                     "didn't return — his replacement, the one and only Roy "
+                     "Hoenisch: indirectly related by marriage, the much-heralded "
+                     "4th Fowler on the tour.")},
+    2007: {"finalFour": ["john-taber", "bruce-morris", "dan-taber", "john-williams"],
+           "championshipCourse": "Mn O War", "warmups": ["World Turd", "River Oaks"],
+           "story": ("An early downpour washes out Pappy and the competition fades "
+                     "on familiar Man O War — Johnny birdies #18 in style with the "
+                     "gallery watching to win his first title. Floridian Craig "
+                     "'Knees' joins the tour. Owl on Witch #2; Billy's grunting "
+                     "boar imitation.")},
+    2008: {"finalFour": ["phil-fowler", "joe-dueh", "dan-taber", "craig"],
+           "championshipCourse": "MBN North", "warmups": ["MBN West"],
+           "story": ("King's North becomes Joe's favorite course as he wins his 2nd "
+                     "championship at the tricked-up tract — 'like a fish in water.' "
+                     "Subsequent meetings result in King's North being forever "
+                     "banned from championship-course play.")},
+    2009: {"finalFour": ["phil-fowler", "dan-taber", "jim-fowler", "john-taber"],
+           "championshipCourse": "Long Bay",
+           "warmups": ["MBN Southcreek", "MBN West"],
+           "story": ("'Long Bay-Gate': Phil picks the championship course and then "
+                     "proceeds to win it there. Warmest week ever, drinks by the "
+                     "pool, down to 8 diehards — the economy taking its toll.")},
+}
+
+EARLY_YEARS = [
+    {
+        "year": 1998,
+        "location": "Fayetteville, NC",
+        "courses": [],
+        "rounds": [],
+        "leaderboard": [],
+        "attendees": ["jim-fowler", "dan-taber", "tom-conroy", "john-taber",
+                      "john-williams", "jose-perna", "joe-dueh"],
+        "champion": None,
+        "championNote": "No champion — total washout (Jimmy's history, fact per Ryan).",
+        "story": ("The year it all started (for Jimmy anyway). Fayetteville, North "
+                  "Carolina: a total washout — it rained every day. Forever known "
+                  "as 'Fayette-nam'. But it started a tradition of golf "
+                  "man-cations."),
+        "noScores": True,
+    },
+    {
+        "year": 1999,
+        "location": "Hilton Head Island, SC",
+        "courses": ["Old Carolina", "Old South", "Shipyard"],
+        "coursesNote": "Partial — two courses unknown ('Old Carolina, Old South, ??, ??, Shipyard').",
+        "rounds": [],
+        "leaderboard": [],
+        "attendees": ["jim-fowler", "dan-taber", "tom-conroy", "john-taber",
+                      "john-williams", "jose-perna", "joe-dueh"],
+        "champion": "jim-fowler",
+        "championNote": ("From Jimmy's history (fact per Ryan): first-ever HHGA "
+                         "championship. No scores survive."),
+        "championship": {
+            "finalThree": ["jim-fowler", "john-taber", "joe-dueh"],
+            "championshipCourse": "Shipyard",
+        },
+        "story": ("Jimmy outlasts Joe and Johnny at Shipyard — the round is lost "
+                  "for Joe when a single is put in the final threesome, Johnny "
+                  "fades early, and Jimmy cruises to the first ever HHGA "
+                  "championship. First year as guests at Pappy's condo: the condo "
+                  "is cool, the hot tub is warm. Van from Johnny's to Philly, fly "
+                  "to Savannah. The start of it all — the rest is history."),
+        "noScores": True,
+    },
+]
+
+
+def apply_jimmy_history(years):
+    """Champion corrections + championship blocks from Jimmy's archive,
+    plus the 1998/1999 story-only years."""
+    for yr in years:
+        y = yr["year"]
+        if y in CHAMPION_CORRECTIONS:
+            pid, note = CHAMPION_CORRECTIONS[y]
+            yr["champion"] = pid
+            yr["championNote"] = (
+                f"Champion per Jimmy's 'HHGA Web site design.doc' (fact, Ryan "
+                f"2026-07-08): {note} Supersedes the earlier cumulative-net "
+                f"reading. Leaderboard below = cumulative standings, not the "
+                f"championship result.")
+        if y in YEAR_HISTORY:
+            h = YEAR_HISTORY[y]
+            yr["championship"] = {
+                "finalFour": h["finalFour"],
+                "championshipCourse": h["championshipCourse"],
+            }
+            if "format" in h:
+                yr["championship"]["format"] = h["format"]
+            if "warmups" in h:
+                yr["warmups"] = h["warmups"]
+            yr["story"] = h["story"]
+    return EARLY_YEARS + years
+
+
 # ---------------------------------------------------------------- main
 
 EXTRACTORS = {
@@ -2237,12 +2392,15 @@ def main():
     years = []
     for y in sorted(EXTRACTORS):
         yr = EXTRACTORS[y](alias_lookup)
-        year_file = YEARS_DIR / f"{y}.json"
+        years.append(yr)
+
+    years = apply_jimmy_history(years)
+    for yr in years:
+        year_file = YEARS_DIR / f"{yr['year']}.json"
         year_file.write_text(json.dumps(yr, indent=2))
         print(f"Wrote {year_file} ({year_file.stat().st_size:,} bytes) — "
               f"{len(yr['rounds'])} rounds, {len(yr['leaderboard'])} players, "
               f"champion={yr['champion']}")
-        years.append(yr)
 
     data = {"players": players, "years": years}
     OUT.write_text(json.dumps(data, indent=2))

@@ -1415,5 +1415,19 @@
   ],
   "champion": "john-taber",
   "championNote": "Verified by Ryan 2026-07-02: champion = lowest net (John Taber 359, by one over John Williams). Billy (1 round) excluded from places.",
-  "rosterNote": "New in 2007: Irv, Craig, Billy ('Brother Billy', 1 round) \u2014 full names needed from Ryan."
+  "rosterNote": "New in 2007: Irv, Craig, Billy ('Brother Billy', 1 round) \u2014 full names needed from Ryan.",
+  "championship": {
+    "finalFour": [
+      "john-taber",
+      "bruce-morris",
+      "dan-taber",
+      "john-williams"
+    ],
+    "championshipCourse": "Mn O War"
+  },
+  "warmups": [
+    "World Turd",
+    "River Oaks"
+  ],
+  "story": "An early downpour washes out Pappy and the competition fades on familiar Man O War \u2014 Johnny birdies #18 in style with the gallery watching to win his first title. Floridian Craig 'Knees' joins the tour. Owl on Witch #2; Billy's grunting boar imitation."
 }

@@ -1614,5 +1614,18 @@
       "result": null,
       "resultNote": "Final result unknown \u2014 the doc only covers through Wednesday (4.5-4.5); Thursday singles results were not recorded in the folder."
     }
-  }
+  },
+  "championship": {
+    "finalFour": [
+      "phil-fowler",
+      "joe-dueh",
+      "dan-taber",
+      "craig"
+    ],
+    "championshipCourse": "MBN North"
+  },
+  "warmups": [
+    "MBN West"
+  ],
+  "story": "King's North becomes Joe's favorite course as he wins his 2nd championship at the tricked-up tract \u2014 'like a fish in water.' Subsequent meetings result in King's North being forever banned from championship-course play."
 }
